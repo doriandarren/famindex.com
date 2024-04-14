@@ -1,12 +1,13 @@
-<script setup>
-</script>
-
 <template>
 
   <div class="min-h-screen flex flex-col">
-    <!-- <Header /> -->
+    <Header />
+
+
+
+
+
     <main class="flex-grow container mx-auto px-4">
-      <!-- Contenido principal aquí -->hola!!
 
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
@@ -81,3 +82,9 @@
     <!-- <Footer /> -->
   </div>
 </template>
+
+<script setup>
+  
+  import Header from '@/components/template/public/Header.vue';
+
+</script>
