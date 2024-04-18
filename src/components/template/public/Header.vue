@@ -1,3 +1,4 @@
+import { RouterLink } from 'vue-router';
 <template>
     <!-- <header class="bg-gray-800 text-white p-4">
         <h1>Mi Sitio Web</h1>
@@ -13,8 +14,8 @@
                 <span class="ml-3 text-xl">Famindex</span>
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-gray-900">First Link</a>
-                <a class="mr-5 hover:text-gray-900">Second Link</a>
+                <RouterLink to="/login" class="mr-5 hover:text-gray-900">Login</RouterLink>
+                <!-- <a class="mr-5 hover:text-gray-900">Second Link</a> -->
             </nav>
         </div>
     </header>
