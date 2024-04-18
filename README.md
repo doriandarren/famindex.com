@@ -19,3 +19,23 @@ npm run dev
 ```sh
 npm run build
 ```
+
+
+
+## headlessui:
+
+```sh
+
+npm install @headlessui/vue@latest
+
+```
+
+
+
+## heroicons:
+
+```sh
+
+npm install @heroicons/vue
+
+```

@@ -21,11 +21,11 @@
                     :type="showPassword ? 'text' : 'password'" id="password" v-model="password" />
                 <div class="absolute inset-y-0 right-0 flex items-center px-2">
                     <button type="button" @click="togglePasswordVisibility">
-                        ver
-                        <!-- <img 
-                      :src="showPassword ? 'path/to/eye-closed-icon.svg' : 'path/to/eye-open-icon.svg'" 
-                      alt="Show/Hide password"
-                  /> -->
+                        <img 
+                            class="w-6 h-6"
+                            :src="showPassword ? '/eye_off.svg' : '/eye_on.svg'"
+                            alt="Show/Hide password" 
+                        />
                     </button>
                 </div>
             </div>
