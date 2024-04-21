@@ -27,6 +27,26 @@ const routes = [
 
 
 
+
+
+  /** Rutas protegidas */
+  {
+    path: '/',
+    name: 'main',
+    component: () => import('@/components/template/private/Main.vue'),
+    redirect: '/dashboard',
+    meta: { requiresAuth: true },
+    children: [
+      {
+        path: '/dashboard',
+        name: 'dashboard',
+        component: () => import('@/views/dashboard/Dashboard.vue')
+      },
+    ]
+  },
+
+
+
   { 
     path: '/:path(.*)', 
     name: "NotFound",
