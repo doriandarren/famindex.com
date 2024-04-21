@@ -87,6 +87,9 @@ const submit = async () => {
         return;
     }
 
+    // forzamos el dashboard
+    router.push('/dashboard');
+
     //Splytin2023
     // let data = {
     //     email: correo.value,
