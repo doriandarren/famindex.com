@@ -13,9 +13,7 @@ export const PublicRoutes = () => {
         <Route 
           path="/" 
           element={
-            <MainLayout>
-              <HomePage />
-            </MainLayout>
+            <HomePage />
           } 
         />
 
