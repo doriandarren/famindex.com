@@ -4,6 +4,7 @@ import { MainLayout } from "../../../layouts/MainLayout";
 import { AboutPage } from "../pages/AboutPage";
 import { ContactPage } from "../pages/ContactPage";
 import { DilanPage } from "../pages/DilanPage";
+import { MilePage } from "../pages/MilePage";
 
 export const PublicRoutes = () => {
   return (
@@ -46,6 +47,15 @@ export const PublicRoutes = () => {
             </MainLayout>
           } 
         />
+
+        <Route 
+          path="/milena" 
+          element={
+            <MainLayout>
+              <MilePage />
+            </MainLayout>
+          } 
+        />    
 
 
 
