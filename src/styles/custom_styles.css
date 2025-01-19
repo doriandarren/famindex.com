@@ -11,11 +11,13 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 1.8;
 }
+mq
 h1, h2, h3 {
     font-weight: 900;
     margin: 2rem 0;
