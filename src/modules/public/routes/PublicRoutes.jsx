@@ -1,7 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { HomePage } from "../pages/HomePage";
 import { MainLayout } from "../../../layouts/MainLayout";
-import { DilanPage } from "../pages/DilanPage";
+import { AboutPage } from "../pages/AboutPage";
+import { ContactPage } from "../pages/ContactPage";
 
 export const PublicRoutes = () => {
   return (
@@ -19,13 +20,24 @@ export const PublicRoutes = () => {
         />
 
         <Route 
-          path="/dilan" 
+          path="/about" 
           element={
             <MainLayout>
-              <DilanPage />
+              <AboutPage />
             </MainLayout>
           } 
         />
+
+        <Route 
+          path="/contact" 
+          element={
+            <MainLayout>
+              <ContactPage />
+            </MainLayout>
+          } 
+        />
+
+
 
         {/* <Route path="/*" element={ <LoginPage /> } /> */}
         <Route path="/*" element={ <Navigate to="/login" /> } />
