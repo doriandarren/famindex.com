@@ -5,6 +5,7 @@ import { AboutPage } from "../pages/AboutPage";
 import { ContactPage } from "../pages/ContactPage";
 import { DilanPage } from "../pages/DilanPage";
 import { MilePage } from "../pages/MilePage";
+import { DorianPage } from "../pages/DorianPage";
 
 export const PublicRoutes = () => {
   return (
@@ -53,6 +54,16 @@ export const PublicRoutes = () => {
           element={
             <MainLayout>
               <MilePage />
+            </MainLayout>
+          } 
+        />  
+
+
+        <Route 
+          path="/dorian" 
+          element={
+            <MainLayout>
+              <DorianPage />
             </MainLayout>
           } 
         />    
