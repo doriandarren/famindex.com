@@ -2,7 +2,9 @@
     --primario: #6834a6;
     --blanco: #FFF;
     --negro: #000000;
-    --fuentePrincipal: 'Poppins', sans-serif;
+    /* --fuentePrincipal: 'Poppins', sans-serif; */
+    --fuentePrincipal: 'Lato', sans-serif; 
+
 }
 html {
     font-size: 62.5%;
@@ -14,7 +16,7 @@ html {
 
 body {
     font-family: var(--fuentePrincipal);
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     line-height: 1.8;
 }
 mq

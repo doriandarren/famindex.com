@@ -2,6 +2,11 @@
 
 export const MilePage = () => {
   return (
-    <h1>Mile Page</h1>
+    <>
+      <div className="flex flex-row">
+        <h2>Hola</h2>
+        <p>Mundo</p>
+      </div>
+    </>
   )
 }

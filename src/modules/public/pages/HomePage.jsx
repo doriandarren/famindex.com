@@ -100,9 +100,9 @@ export const HomePage = () => {
 
 
 
-      <section className="text-center py-16 bg-gradient-to-r from-primary to-secondary text-white p-8 rounded">
-        <h2 className="text-black text-4xl font-bold mb-4">Desarrollo de Software a Medida</h2>
-        <p className="text-lg">Creamos soluciones específicas para tus necesidades.</p>
+      <section className="div_custom">
+        <h2 className="div_custom_h2">Desarrollo de Software a Medida</h2>
+        <p className="div_custom_p">Creamos soluciones específicas para tus necesidades.</p>
       </section>
 
 
