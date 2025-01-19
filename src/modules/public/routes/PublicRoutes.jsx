@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { HomePage } from "../pages/HomePage";
 import { MainLayout } from "../../../layouts/MainLayout";
+import { DilanPage } from "../pages/DilanPage";
 
 export const PublicRoutes = () => {
   return (
@@ -13,6 +14,15 @@ export const PublicRoutes = () => {
           element={
             <MainLayout>
               <HomePage />
+            </MainLayout>
+          } 
+        />
+
+        <Route 
+          path="/dilan" 
+          element={
+            <MainLayout>
+              <DilanPage />
             </MainLayout>
           } 
         />
