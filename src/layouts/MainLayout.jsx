@@ -85,7 +85,11 @@ export const MainLayout = ({ children }) => {
       </div>
 
       {/* Main Content */}
-      <main className="flex-grow container mx-auto p-6">{children}</main>
+      
+      {/* <main className="flex-grow container mx-auto p-6">{children}</main> */}
+      <main>{children}</main>
+
+
 
       {/* Footer */}
       <footer className="bg-primary-dark text-neutral-light">
