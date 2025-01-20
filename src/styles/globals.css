@@ -62,7 +62,7 @@
         @apply  border border-red-500 rounded-lg;
     }
     
-    
+
 
     body {
         @apply bg-gray-100 text-black;
