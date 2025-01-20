@@ -24,7 +24,7 @@ export const MainLayout = ({ children }) => {
                   </div>
 
                   <nav className="navegacion">
-                      <a href="/home" className="navegacion__link">Home</a>
+                      <a href="/" className="navegacion__link">Home</a>
                       <a href="/about" className="navegacion__link">Quienes somos</a>
                       <a href="/contact" className="navegacion__link">Contacto</a>
                       <a href="/milena" className="navegacion__link">Milena</a>
