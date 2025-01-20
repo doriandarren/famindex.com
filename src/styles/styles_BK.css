@@ -1,11 +1,11 @@
 :root {
-    --primary: #6834a6;
-    --white: #FFF;
-    --black: #000000;
-    /* --mainFont: 'Poppins', sans-serif; */
-    --mainFont: 'Lato', sans-serif; 
-}
+    --primario: #6834a6;
+    --blanco: #FFF;
+    --negro: #000000;
+    /* --fuentePrincipal: 'Poppins', sans-serif; */
+    --fuentePrincipal: 'Lato', sans-serif; 
 
+}
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: var(--mainFont);
+    font-family: var(--fuentePrincipal);
     font-size: 2.6rem;
     line-height: 1.8;
 }
@@ -26,6 +26,7 @@ h1, h2, h3 {
 }
 h1 {
     font-size: 5rem;
+    
 }
 h2 {
     font-size: 4.6rem;
@@ -41,7 +42,7 @@ img {
     display: block;
 }
 
-/** Attribute Selector **/
+/** Selector de Atributos **/
 [class$="__container"]{
     max-width: 120rem;
     margin: 0 auto;
@@ -53,9 +54,12 @@ img {
     margin-bottom: 5rem;
 }
 
+
+
+
 /** Header **/
 
-.header {
+.header{
     background-image: url(../assets/images/header_bg.svg);
     background-repeat: no-repeat;
     background-position: top right;
@@ -64,40 +68,41 @@ img {
 }
 
 @media (min-width: 768px) { 
-    .header {
+    .header{
         background-size: 50rem;
     }
 }
 
 @media (min-width: 992px) { 
-    .header {
+    .header{
         background-size: 60rem;
     }
 }
 
 @media (min-width: 1280px) { 
-    .header {
+    .header{
         background-size: 110rem;
     }
 }
 
+
 @media (min-width: 768px) { 
-    .header__bar {
+    .header__barra{
         display: flex;
         justify-content: space-between;
     }
 }
 
-.header__logo {
+.header__logo{
     width: 15rem;
     margin: 0 auto 3rem auto;
 }
 
 @media (min-width: 768px) { 
-    .header__logo {
+    .header__logo{
         margin: 0;
     }
-    .header__grid {
+    .header__grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
@@ -105,12 +110,12 @@ img {
     }
 }
 
-.header__heading {
+.header__heading{
     font-size: 3rem;
 }
 
 @media (min-width: 768px) { 
-    .header__heading {
+    .header__heading{
         text-align: left;
         font-size: 5rem;
         line-height: 1.2;
@@ -118,71 +123,78 @@ img {
 }
 
 @media (min-width: 768px) { 
-    .header__image {
+    .header__imagen{
         max-width: 30rem;
         margin: 0 auto;
     }
 }
 
-.header__button {
-    background-color: var(--primary);
+.header__boton{
+    background-color: var(--primario);
     display: block;
     padding: 1rem;
     text-align: center;
-    color: var(--white);
+    color: var(--blanco);
     margin-bottom: 4rem;
 }
 
 @media (min-width: 768px) { 
-    .header__button {
+    .header__boton{
         padding: 1rem 3rem;
         display: inline-block;
     }
 }
 
-/** Navigation **/
 
-.navigation {
+
+
+/** Navegación **/
+
+.navegacion{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 @media (min-width: 768px) { 
-    .navigation {
+    .navegacion{
         flex-direction: row;
         align-items: flex-start;
         gap: 2rem;
     }
 }
 
-.navigation__link {
-    color: var(--primary);
+.navegacion__link {
+    color: var(--primario);
 }
 
 @media (min-width: 768px) { 
-    .navigation__link {
-        color: var(--white);
+    .navegacion__link{
+        color: var(--blanco);
     }
 }
 
-.navigation__link--white {
-    color: var(--white);
+.navegacion__link--blanco{
+    color: var(--blanco);
 }
 
-/** About **/
 
-.nucleus {
+/** Que es **/
+
+.nucleus{
     margin-top: 3rem;
+
 }
 
-.nucleus__grid {
+
+.nucleus__grid{
     display: flex;
     flex-direction: column-reverse;
 }
 
+
 @media (min-width: 768px) { 
-    .nucleus__grid {
+    .nucleus__grid{
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 5rem;
@@ -190,24 +202,28 @@ img {
     }
 }
 
+.listado{
 
+}
 
-.list__item {
-    background-color: var(--white);
+.listado__elemento{
+    background-color: var(--blanco);
     box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
     padding: 2rem;
     margin-bottom: 5rem;
     transition-property: transform;
     transition-duration: 300ms;
     /* transition-delay: 1s; */
+
 }
 
-.list__item:hover {
+.listado__elemento:hover{
     transform: scale(1.1);
 }
 
+
 @media (min-width: 768px) { 
-    .list__item--2col {
+    .listado__elemento--2col{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -215,70 +231,74 @@ img {
     }
 }
 
-.list__heading {
+.listado__heading{
     font-size: 3rem;
-    color: var(--primary);
+    color: var(--primario);
     margin: 0;
 }
 
-.list__number {
+.listado__numero{
     font-size: 6rem;
     margin: 0;
     font-weight: 900;
-    color: var(--primary);
+    color: var(--primario);
     text-align: center;
 }
 
 @media (min-width: 768px) { 
-    .list__number {
+    .listado__numero{
         flex-basis: 20rem;
         text-align: right;
         font-size: 4rem;
     }
 }
 
-.list__text {
+.listado__texto{
     margin: 0;
     font-size: 2rem;
 }
 
-/** Security **/
 
-.security {
-    background-color: var(--primary);
+/**Seguridad **/
+
+.seguridad{
+    background-color: var(--primario);
     padding: 20rem 0;
     position: relative;
     margin: 10rem 0;
     overflow: hidden;
 }
 
-.security::before, 
-.security::after {
-    background-color: var(--white);
+
+.seguridad::before, 
+.seguridad::after{
+    background-color: var(--blanco);
     content: '';
     height: 20rem;
     width: 120%;
     position: absolute;
 }
 
-.security::before {
+
+.seguridad::before{
     top: -10rem;
     left: 0;
     transform: rotate(3deg);
 }
 
-.security::after {
+.seguridad::after{
     bottom: -10rem;
     left: -1rem;
     transform: rotate(3deg);
 }
 
-.security__heading {
-    color: var(--white);
+
+.seguridad__heading{
+    color: var(--blanco);
 }
 
 @media (min-width: 768px) { 
-    .security__grid {
+    .seguridad__grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 5rem;
@@ -287,44 +307,73 @@ img {
 }
 
 
+/** Comisiones **/
 
-/** Testimonials **/
+@media (min-width: 768px) { 
+    .comsiones__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: flex-end;
+    }
+}
 
-.testimonials {
-    background-color: var(--primary);
+@media (min-width: 998px) { 
+    .comsiones__grid{
+        align-items: flex-end;
+    }
+}
+
+.comisiones__texto{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) { 
+    .comisiones__texto{
+        text-align: left;
+    }
+}
+
+
+/** Testimoniales **/
+
+.testimoniales{
+    background-color: var(--primario);
     padding: 5rem 0;
 }
 
-.testimonials__heading {
-    color: var(--white);
+.testimoniales__heading{
+    color: var(--blanco);
 }
 
-.testimonials__grid {
+.testimoniales__grid{
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;
 }
 
 @media (min-width: 768px) { 
-    .testimonials__grid {
+    .testimoniales__grid{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-.testimonial {
+.testimonial{
     box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
-    background-color: var(--white);
+    background-color: var(--blanco);
     padding: 2rem;
     position: relative;
 }
 
-.testimonial__text {
+.testimonial__texto{
     padding-left: 4rem;
 }
 
-.testimonial__text::before {
+.testimonial__texto::before{
     content: '';
-    background-image: url(../img/quote.png);
+    background-image: url(../img/comilla.png);
     background-size: 3rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -335,34 +384,39 @@ img {
     left: 2rem;
 }
 
-.testimonial__author {
-    color: var(--primary);
+.testimonial__autor{
+    color: var(--primario);
     font-weight: 700;
     text-align: right;
 }
 
+
+
 /** Footer **/
 
-.footer {
+.footer{
     background-color: #5A30A0;
     padding: 3rem 0;
 }
 
+
 @media (min-width: 768px) { 
-    .footer__grid {
+    .footer__grid{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 }
 
-.footer__logo {
+.footer__logo{
     width: 20rem;
     margin: 0 auto 4rem auto;
 }
 
 @media (min-width: 768px) { 
-    .footer__logo {
+    .footer__logo{
         margin: 0;
     }
 }
+
+
