@@ -1,3 +1,4 @@
+import { FooterLayout } from "./components/FooterLayout";
 import { HeaderLayout } from "./components/HeaderLayout";
 
 
@@ -10,6 +11,8 @@ export const MainLayout = ({ children }) => {
       <HeaderLayout />
 
       <main>{children}</main>
+
+      <FooterLayout />
 
     </>
 

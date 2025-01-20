@@ -4,6 +4,7 @@ import app1 from '../../assets/images/app_1.svg';
 
 
 export const HeaderLayout = () => {
+
     return (
         <>
             <header className="header">
@@ -17,12 +18,48 @@ export const HeaderLayout = () => {
                         </div>
 
                         <nav className="navigation">
-                            <NavLink to="/" className="navigation__link">Inicio</NavLink>
-                            <NavLink to="/about" className="navigation__link">Quienes somos</NavLink>
-                            <NavLink to="/contact" className="navigation__link">Contacto</NavLink>
-                            <NavLink to="/milena" className="navigation__link">Milena</NavLink>
-                            <NavLink to="/dilan" className="navigation__link">Dilan</NavLink>
-                            <NavLink to="/dorian" className="navigation__link">Dorian</NavLink>
+                            <NavLink 
+                                className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
+                                to="/" 
+                            >
+                                Inicio
+                            </NavLink>
+
+                            <NavLink 
+                                className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
+                                to="/about"
+                            >
+                                Quienes somos
+                            </NavLink>
+
+                            <NavLink 
+                                className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
+                                to="/contact"
+                            >
+                                Contacto
+                            </NavLink>
+
+                            <NavLink 
+                                className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
+                                to="/milena"
+                            >
+                                Milena
+                            </NavLink>
+
+                            <NavLink 
+                                className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
+                                to="/dilan"
+                            >
+                                Dilan
+                            </NavLink>
+
+                            <NavLink 
+                                className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
+                                to="/dorian"
+                            >
+                                Dorian
+                            </NavLink>
+
                         </nav>
 
                     </div>

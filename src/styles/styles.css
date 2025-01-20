@@ -2,8 +2,8 @@
     --primary: #6834a6;
     --white: #FFF;
     --black: #000000;
-    /* --mainFont: 'Poppins', sans-serif; */
-    --mainFont: 'Lato', sans-serif; 
+    --mainFont: 'Poppins', sans-serif;
+    /* --mainFont: 'Lato', sans-serif;  */
 }
 
 html {
@@ -59,7 +59,7 @@ img {
     background-image: url(../assets/images/header_bg.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 10rem;
+    background-size: 45rem;
     padding: 5rem 0;
 }
 
@@ -158,6 +158,11 @@ img {
 
 .navigation__link {
     color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+.navigation__link:hover {
+    color: var(--black); /* Cambia al color primario al pasar el cursor */
 }
 
 @media (min-width: 768px) { 
@@ -169,6 +174,11 @@ img {
 .navigation__link--white {
     color: var(--white);
 }
+
+.navigation__link--active{
+    color: var(--black);
+}
+
 
 /** About **/
 
