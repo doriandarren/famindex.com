@@ -4,7 +4,7 @@
 |--------------------------------------------------------------------------
 |
 */ 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); */
 
 
 
@@ -34,6 +34,7 @@
 */
 @layer components {
     
+    /* Button  */
     .btn{
         @apply py-2 px-4 font-semibold rounded-lg shadow-md;
     }
@@ -63,32 +64,13 @@
     }
     
 
-
-    h1{
-        @apply text-3xl text-primary mt-5;
-    }
-
-    h2{
-        @apply text-2xl text-primary mt-5;
-    }
-
-    h3{
-        @apply text-xl text-primary mt-5;
-    }
-
-    p{
-        @apply text-justify mt-5;
-    }
-
-
-
     /* Archivo global.css */
     .card {
         @apply shadow border p-4 rounded bg-white;
     }
     
     .card--featured {
-        @apply bg-yellow-100 border-yellow-500;
+        @apply bg-primary-alpha70 border-primary;
     }
     
     .card__title {
@@ -100,21 +82,7 @@
     }
     
     .card__button {
-        @apply bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600;
-    }
-    
-
-    
-    .div_custom{
-        @apply text-center py-16 bg-gradient-to-r from-primary-dark to-secondary text-white p-8 rounded;
-    }
-
-    
-    .div_custom_h2{
-        @apply text-black text-4xl font-bold mb-4;
-    }
-    .div_custom_p{
-        @apply text-2xl;
+        @apply bg-primary text-white py-2 px-4 rounded hover:bg-primary-dark;
     }
 
     

@@ -11,14 +11,16 @@ export default {
       },
       colors: {
         primary: {
-          DEFAULT: '#4f9da6', // Color sólido principal
-          light: '#7dbdc8',
-          dark: '#35757d',
-          alpha10: 'rgba(79, 157, 166, 0.1)', // Transparencia 10%
-          alpha30: 'rgba(79, 157, 166, 0.3)', // Transparencia 30%
-          alpha50: 'rgba(79, 157, 166, 0.5)', // Transparencia 50%
-          alpha70: 'rgba(79, 157, 166, 0.7)', // Transparencia 70%
-          alpha90: 'rgba(79, 157, 166, 0.9)', // Transparencia 90%
+          DEFAULT: '#6834a6', // Color sólido principal
+          light: '#8052c4', // Un tono más claro
+          lighter: '#9971e3', // Aún más claro
+          dark: '#522980', // Un tono más oscuro
+          darker: '#3b1d5c', // Aún más oscuro
+          alpha10: 'rgba(104, 52, 166, 0.1)', // Transparencia 10%
+          alpha30: 'rgba(104, 52, 166, 0.3)', // Transparencia 30%
+          alpha50: 'rgba(104, 52, 166, 0.5)', // Transparencia 50%
+          alpha70: 'rgba(104, 52, 166, 0.7)', // Transparencia 70%
+          alpha90: 'rgba(104, 52, 166, 0.9)', // Transparencia 90%
         },
         secondary: {
           DEFAULT: '#78c800',

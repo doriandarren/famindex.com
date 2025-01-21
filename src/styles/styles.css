@@ -1,5 +1,5 @@
 :root {
-    --primary: #6834a6;
+    --primary: #6834a6;  /* #6834a6 */
     --white: #FFF;
     --black: #000000;
     --mainFont: 'Poppins', sans-serif;
@@ -139,6 +139,37 @@ img {
         display: inline-block;
     }
 }
+
+
+/** Navbar **/
+
+.navbar__bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.navbar__logo {
+    width: 15rem;
+    margin: 0 auto 3rem auto;
+}
+
+@media (min-width: 768px) { 
+    .navbar__logo {
+        margin: 0;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .navbar__bar {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 
 /** Navigation **/
 
@@ -354,8 +385,9 @@ img {
 /** Footer **/
 
 .footer {
-    background-color: #5A30A0;
+    background-color: var(--primary);
     padding: 3rem 0;
+    margin-top: 3rem;
 }
 
 @media (min-width: 768px) { 
@@ -376,3 +408,4 @@ img {
         margin: 0;
     }
 }
+

@@ -13,8 +13,8 @@ export const PublicRoutes = () => {
   return (
     <>
 
-      <HeaderLayout />
-      
+    <HeaderLayout />
+
       <Routes>
         
         <Route path="/" element={<HomePage />} />
@@ -30,7 +30,7 @@ export const PublicRoutes = () => {
         <Route path="/*" element={ <Navigate to="/login" /> } />
         
       </Routes>
-
+    
       <FooterLayout />
       
     </>
