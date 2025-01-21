@@ -56,30 +56,30 @@ img {
 /** Header **/
 
 .header {
-    background-image: url(../assets/images/header_bg.svg);
+    /* background-image: url(../assets/images/header_bg.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 45rem;
+    background-size: 45rem; */
     padding: 5rem 0;
 }
 
-@media (min-width: 768px) { 
+/* @media (min-width: 768px) { 
     .header {
         background-size: 50rem;
     }
-}
+} */
 
-@media (min-width: 992px) { 
+/* @media (min-width: 992px) { 
     .header {
         background-size: 60rem;
     }
-}
+} */
 
-@media (min-width: 1280px) { 
+/* @media (min-width: 1280px) { 
     .header {
         background-size: 110rem;
     }
-}
+} */
 
 @media (min-width: 768px) { 
     .header__bar {
@@ -167,7 +167,7 @@ img {
 
 @media (min-width: 768px) { 
     .navigation__link {
-        color: var(--white);
+        color: var(--primary);
     }
 }
 
