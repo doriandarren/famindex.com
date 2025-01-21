@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from "react-router";
 import { HomePage } from "../pages/HomePage";
-import { MainLayout } from "../../../layouts/MainLayout";
 import { AboutPage } from "../pages/AboutPage";
 import { ContactPage } from "../pages/ContactPage";
 import { DilanPage } from "../pages/DilanPage";
