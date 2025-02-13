@@ -1,67 +1,50 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from "react-router";
+import classNames from "classnames";
 import logo from '../../assets/images/logo.svg';
 
 
 export const HeaderLayout = () => {
 
+    const navLinks = [
+        { to: "/", label: "Inicio" },
+        { to: "/about", label: "Quienes somos" },
+        { to: "/contact", label: "Contacto" },
+    ];
+
     return (
         <>
-            <div className="navbar__container">
-                <div className="navbar__bar">
+            <header className="header__container">
+                <div className="header__bar">
 
-                    <div className="navbar__logo">
+                    <div className="header__logo">
                         <Link to="/">
                             <img src={logo} alt="logo nucleus" />
                         </Link>
                     </div>
 
-                    <nav className="navigation">
-                        <NavLink 
-                            className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
-                            to="/" 
-                        >
-                            Inicio
-                        </NavLink>
-
-                        <NavLink 
-                            className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
-                            to="/about"
-                        >
-                            Quienes somos
-                        </NavLink>
-
-                        <NavLink 
-                            className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
-                            to="/contact"
-                        >
-                            Contacto
-                        </NavLink>
-
-                        <NavLink 
-                            className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
-                            to="/milena"
-                        >
-                            Milena
-                        </NavLink>
-
-                        <NavLink 
-                            className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
-                            to="/dilan"
-                        >
-                            Dilan
-                        </NavLink>
-
-                        <NavLink 
-                            className={({ isActive }) => `navigation__link ${ isActive ? 'navigation__link--active' : '' }`}
-                            to="/dorian"
-                        >
-                            Dorian
-                        </NavLink>
-
+                    <nav className="navbar">
+                        {navLinks.map(({ to, label }) => (
+                          <li 
+                            key={to} 
+                            className="navbar__item"
+                          >
+                              <NavLink
+                                to={to}
+                                className={({ isActive }) =>
+                                  classNames("navbar__link", {
+                                    "navbar__link--active": isActive,
+                                  })
+                                }
+                              >
+                                {label}
+                              </NavLink>
+                          </li>
+                        ))}
+                        
                     </nav>
 
                 </div>
-            </div>
+            </header>
         </>
     )
 }

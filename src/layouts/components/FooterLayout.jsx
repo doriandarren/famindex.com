@@ -1,6 +1,5 @@
 import logoBlanco from '../../assets/images/logo-blanco.svg';
 
-
 export const FooterLayout = () => {
   return (
     <footer className="footer">
