@@ -1,8 +1,9 @@
 import { Section } from "../../../components/Sections/Section";
+import { PublicLayout } from "../../../layouts/public/PublicLayout";
 
 export const AboutPage = () => {
   return (
-    <>
+    <PublicLayout>
       <Section
         title="Quiénes Somos"
         subtitle="Conoce más sobre nuestra misión y valores"
@@ -52,6 +53,6 @@ export const AboutPage = () => {
           </div>
         </div>
       </Section>
-    </>
+    </PublicLayout>
   );
 };
