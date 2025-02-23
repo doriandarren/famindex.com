@@ -21,7 +21,7 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { useLocation } from "react-router";
+import { Link, useLocation } from "react-router";
 
 const navigation = {
   categories: [
@@ -273,20 +273,20 @@ export const HeaderLayout = () => {
 
             <div className="space-y-6 border-t border-gray-200 px-4 py-6">
               <div className="flow-root">
-                <a
-                  href="#"
+                <Link
+                  to="/auth/login"
                   className="-m-2 block p-2 font-medium text-gray-900"
                 >
                   Sign in
-                </a>
+                </Link>
               </div>
               <div className="flow-root">
-                <a
-                  href="#"
+                <Link
+                  to="/auth/register"
                   className="-m-2 block p-2 font-medium text-gray-900"
                 >
                   Create account
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -307,6 +307,7 @@ export const HeaderLayout = () => {
         </div>
       </Dialog>
 
+      {/* Web menu */}
       <header className="relative overflow-hidden">
         {/* Top navigation */}
         <nav
@@ -327,14 +328,14 @@ export const HeaderLayout = () => {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
+                <Link to="/">
                   <span className="sr-only">Your Company</span>
                   <img
                     alt=""
                     src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
                     className="h-8 w-auto"
                   />
-                </a>
+                </Link>
               </div>
 
               {/* Flyout menus */}
@@ -444,19 +445,20 @@ export const HeaderLayout = () => {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a
-                    href="#"
+                  <Link
+                    to="/auth/login"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     Sign in
-                  </a>
+                    {/* {t("login_page.sign_in")} */}
+                  </Link>
                   <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
-                  <a
-                    href="#"
+                  <Link
+                    to="/auth/register"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     Create account
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="hidden lg:ml-8 lg:flex">

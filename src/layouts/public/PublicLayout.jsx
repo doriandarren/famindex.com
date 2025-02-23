@@ -5,12 +5,17 @@ import { HeaderLayout } from "./HeaderLayout"
 export const PublicLayout = ({children}) => {
   return (
     <div className="bg-white">
-    
-        <HeaderLayout />
+      <HeaderLayout />
 
+
+      <div className="mt-10">
+        
         {children}
 
-        <FooterLayout />
+        
+      </div>
+
+      <FooterLayout />
 
     </div>
 
