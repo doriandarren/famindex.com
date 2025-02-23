@@ -2,16 +2,14 @@ import { Navigate, Route, Routes } from "react-router";
 import { HomePage } from "../pages/HomePage";
 import { AboutPage } from "../pages/AboutPage";
 import { ContactPage } from "../pages/ContactPage";
-import { HeaderLayout } from "../../../layouts/components/HeaderLayout";
-import { FooterLayout } from "../../../layouts/components/FooterLayout";
+import { HeaderLayout } from "../../../layouts/public/HeaderLayout";
+import { FooterLayout } from "../../../layouts/public/FooterLayout";
 
 
 export const PublicRoutes = () => {
   return (
     <>
-
-      <HeaderLayout />
-
+      
       <Routes>
 
         <Route path="/" element={<HomePage />} />
@@ -21,9 +19,7 @@ export const PublicRoutes = () => {
         <Route path="/*" element={ <Navigate to="/" /> } />
 
       </Routes>
-
-      <FooterLayout />
-
+      
     </>
   )
 }

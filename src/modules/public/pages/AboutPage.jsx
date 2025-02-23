@@ -1,4 +1,4 @@
-import { Section } from "../../../layouts/components/Section";
+import { Section } from "../../../components/Sections/Section";
 
 export const AboutPage = () => {
   return (

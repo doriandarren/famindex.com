@@ -1,5 +1,5 @@
-import { Button } from "../../../layouts/components/Button";
-import { Section } from "../../../layouts/components/Section";
+import { Section } from "../../../components/Sections/Section";
+import { Button } from "../../../components/Buttons/Button";
 
 export const ContactPage = () => {
   return (
