@@ -27,6 +27,8 @@ import { Link, useLocation } from "react-router";
 import { useTranslation } from "react-i18next";
 
 
+
+
 export const HeaderLayout = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
@@ -42,6 +44,7 @@ export const HeaderLayout = () => {
   };
   
   
+
   return (
     <>
       {/* Mobile menu */}
