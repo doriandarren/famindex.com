@@ -1,6 +1,7 @@
-"use client";
+'use client';
 
 import { Fragment, useState } from "react";
+
 import {
   Dialog,
   DialogBackdrop,
@@ -15,6 +16,7 @@ import {
   TabPanel,
   TabPanels,
 } from "@headlessui/react";
+
 import {
   Bars3Icon,
   MagnifyingGlassIcon,
@@ -22,141 +24,24 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { Link, useLocation } from "react-router";
+import { useTranslation } from "react-i18next";
 
-const navigation = {
-  categories: [
-    // {
-    //   id: "women",
-    //   name: "Women",
-    //   featured: [
-    //     {
-    //       name: "New Arrivals",
-    //       href: "#",
-    //       imageSrc:
-    //         "https://tailwindui.com/plus-assets/img/ecommerce-images/mega-menu-category-01.jpg",
-    //       imageAlt:
-    //         "Models sitting back to back, wearing Basic Tee in black and bone.",
-    //     },
-    //     {
-    //       name: "Basic Tees",
-    //       href: "#",
-    //       imageSrc:
-    //         "https://tailwindui.com/plus-assets/img/ecommerce-images/mega-menu-category-02.jpg",
-    //       imageAlt:
-    //         "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
-    //     },
-    //   ],
-    //   sections: [
-    //     {
-    //       id: "clothing",
-    //       name: "Clothing",
-    //       items: [
-    //         { name: "Tops", href: "#" },
-    //         { name: "Dresses", href: "#" },
-    //         { name: "Pants", href: "#" },
-    //         { name: "Denim", href: "#" },
-    //         { name: "Sweaters", href: "#" },
-    //         { name: "T-Shirts", href: "#" },
-    //         { name: "Jackets", href: "#" },
-    //         { name: "Activewear", href: "#" },
-    //         { name: "Browse All", href: "#" },
-    //       ],
-    //     },
-    //     {
-    //       id: "accessories",
-    //       name: "Accessories",
-    //       items: [
-    //         { name: "Watches", href: "#" },
-    //         { name: "Wallets", href: "#" },
-    //         { name: "Bags", href: "#" },
-    //         { name: "Sunglasses", href: "#" },
-    //         { name: "Hats", href: "#" },
-    //         { name: "Belts", href: "#" },
-    //       ],
-    //     },
-    //     {
-    //       id: "brands",
-    //       name: "Brands",
-    //       items: [
-    //         { name: "Full Nelson", href: "#" },
-    //         { name: "My Way", href: "#" },
-    //         { name: "Re-Arranged", href: "#" },
-    //         { name: "Counterfeit", href: "#" },
-    //         { name: "Significant Other", href: "#" },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "men",
-    //   name: "Men",
-    //   featured: [
-    //     {
-    //       name: "New Arrivals",
-    //       href: "#",
-    //       imageSrc:
-    //         "https://tailwindui.com/plus-assets/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
-    //       imageAlt:
-    //         "Drawstring top with elastic loop closure and textured interior padding.",
-    //     },
-    //     {
-    //       name: "Artwork Tees",
-    //       href: "#",
-    //       imageSrc:
-    //         "https://tailwindui.com/plus-assets/img/ecommerce-images/category-page-02-image-card-06.jpg",
-    //       imageAlt:
-    //         "Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
-    //     },
-    //   ],
-    //   sections: [
-    //     {
-    //       id: "clothing",
-    //       name: "Clothing",
-    //       items: [
-    //         { name: "Tops", href: "#" },
-    //         { name: "Pants", href: "#" },
-    //         { name: "Sweaters", href: "#" },
-    //         { name: "T-Shirts", href: "#" },
-    //         { name: "Jackets", href: "#" },
-    //         { name: "Activewear", href: "#" },
-    //         { name: "Browse All", href: "#" },
-    //       ],
-    //     },
-    //     {
-    //       id: "accessories",
-    //       name: "Accessories",
-    //       items: [
-    //         { name: "Watches", href: "#" },
-    //         { name: "Wallets", href: "#" },
-    //         { name: "Bags", href: "#" },
-    //         { name: "Sunglasses", href: "#" },
-    //         { name: "Hats", href: "#" },
-    //         { name: "Belts", href: "#" },
-    //       ],
-    //     },
-    //     {
-    //       id: "brands",
-    //       name: "Brands",
-    //       items: [
-    //         { name: "Re-Arranged", href: "#" },
-    //         { name: "Counterfeit", href: "#" },
-    //         { name: "Full Nelson", href: "#" },
-    //         { name: "My Way", href: "#" },
-    //       ],
-    //     },
-    //   ],
-    // },
-  ],
-  pages: [
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
-  ],
-};
 
 export const HeaderLayout = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
+
+  const navigation = {
+    categories: [],
+    pages: [
+      { name: t("menu.about"), href: "/about" },
+      { name: t("menu.contact"), href: "/contact" },
+    ],
+  };
+  
+  
   return (
     <>
       {/* Mobile menu */}
@@ -277,7 +162,7 @@ export const HeaderLayout = () => {
                   to="/auth/login"
                   className="-m-2 block p-2 font-medium text-gray-900"
                 >
-                  Sign in
+                  { t("login_page.sign_in") }
                 </Link>
               </div>
               <div className="flow-root">
@@ -285,7 +170,7 @@ export const HeaderLayout = () => {
                   to="/auth/register"
                   className="-m-2 block p-2 font-medium text-gray-900"
                 >
-                  Create account
+                  { t("login_page.register") }
                 </Link>
               </div>
             </div>
@@ -449,15 +334,14 @@ export const HeaderLayout = () => {
                     to="/auth/login"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
-                    Sign in
-                    {/* {t("login_page.sign_in")} */}
+                    { t("login_page.sign_in") }
                   </Link>
                   <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
                   <Link
                     to="/auth/register"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
-                    Create account
+                    { t("login_page.register") }
                   </Link>
                 </div>
 

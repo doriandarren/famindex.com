@@ -13,6 +13,10 @@
     "record_deleted": "Record deleted",
     "record_updated": "Record updated"
   },
+  "menu": {
+    "contact": "Contact",
+    "about": "About"
+  },
   "login_page": {
     "title": "Welcome to GlobalFleet",
     "subtitle": "GlobalFleet Invoices Platform.",

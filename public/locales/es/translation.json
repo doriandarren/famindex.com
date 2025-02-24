@@ -13,6 +13,10 @@
     "record_deleted": "Registro eliminado",
     "record_updated": "Registro actualizado"
   },
+  "menu": {
+    "contact": "Contacto",
+    "about": "¿Quienes somos?"
+  },
   "login_page":{
     "title": "Bienvend@ Globalfleet",
     "subtitle": "Plataforma GlobalFleet Facturas.",
