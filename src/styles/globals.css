@@ -121,4 +121,15 @@
         color: white;
         @apply py-2 px-4 rounded hover:bg-[var(--color-primary-dark)] transition duration-300 ease-in-out;
     }
+
+    .custom-class{
+        background: linear-gradient(45deg, #35fa7d, #2e6deb);
+        font-size: 5.8em;
+        transition: 0.3s ease;
+    }
+
+
+    .custom-class:hover{
+        box-shadow: 5px 11px 15px rgba(186, 37, 37, 0.4);
+    }
 }

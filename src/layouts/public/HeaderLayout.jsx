@@ -196,7 +196,7 @@ export const HeaderLayout = () => {
       </Dialog>
 
       {/* Web menu */}
-      <header className="relative overflow-hidden">
+      <header className="relative overflow-hidden custom-class">
         {/* Top navigation */}
         <nav
           aria-label="Top"
