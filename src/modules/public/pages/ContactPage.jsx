@@ -1,17 +1,6 @@
-import { Section } from "../../../components/Sections/Section";
-import { Button } from "../../../components/Buttons/Button";
 import { PublicLayout } from "../../../layouts/public/PublicLayout";
 
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Resources', href: '#' },
-  { name: 'Company', href: '#' },
-]
 const stats = [
   { label: 'Transactions every 24 hours', value: '44 million' },
   { label: 'Assets under holding', value: '$119 trillion' },
@@ -81,7 +70,7 @@ const blogPosts = [
 export const ContactPage = () => {
   return (
     <PublicLayout>
-      <main >
+      <main className="mt-50">
       
         {/* Content section */}
         <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
