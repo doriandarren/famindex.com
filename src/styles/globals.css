@@ -123,11 +123,11 @@
     }
 
     .custom-class{
-        background: linear-gradient(45deg, #a7d740, #2e4e8f);
+        background: linear-gradient(60deg, #a7d740, #2e4e8f);
         font-size: 5.8em;
         transition: 0.5s ease;
+        
     }
-
 
     .custom-class:hover{
         box-shadow: 5px 11px 15px rgba(186, 37, 37, 0.4);

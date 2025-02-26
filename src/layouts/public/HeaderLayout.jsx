@@ -26,13 +26,14 @@ import {
 import { Link, useLocation } from "react-router";
 import { useTranslation } from "react-i18next";
 
+import { ChevronDownIcon } from '@heroicons/react/16/solid'
 
 
 
 export const HeaderLayout = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
 
   const navigation = {
@@ -42,6 +43,14 @@ export const HeaderLayout = () => {
       { name: t("menu.contact"), href: "/contact" },
     ],
   };
+
+  const changeLanguaje = (event) => {
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage); // Cambia el idioma en i18next
+    localStorage.setItem("i18nextLng", selectedLanguage); // Guarda la preferencia
+  }
+
+
   
   
 
@@ -200,7 +209,7 @@ export const HeaderLayout = () => {
         {/* Top navigation */}
         <nav
           aria-label="Top"
-          className="relative z-20 bg-white/90 backdrop-blur-xl backdrop-filter"
+          className="relative z-20 bg-white/90 backdrop-blur-xl backdrop-filter custom-class"
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center">
@@ -353,13 +362,28 @@ export const HeaderLayout = () => {
                     href="#"
                     className="flex items-center text-gray-700 hover:text-gray-800"
                   >
-                    <img
+                    {/* <img
                       alt=""
                       src="https://tailwindui.com/plus-assets/img/flags/flag-canada.svg"
                       className="block h-auto w-5 shrink-0"
                     />
                     <span className="ml-3 block text-sm font-medium">CAD</span>
-                    <span className="sr-only">, change currency</span>
+                    <span className="sr-only">, change currency</span> */}
+                    <select
+                      id="location"
+                      name="location"
+                      defaultValue="Canada"
+                      value={i18n.language}
+                      onChange={changeLanguaje}
+                      className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                    >
+                      <option value="es">Español</option>
+                      <option value="en">Inglés</option>
+                    </select>
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+                    />
                   </a>
                 </div>
 
@@ -391,7 +415,7 @@ export const HeaderLayout = () => {
             </div>
           </div>
         </nav>
-        
+
       </header>
     </>
   );
