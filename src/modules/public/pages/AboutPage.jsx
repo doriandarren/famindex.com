@@ -66,6 +66,7 @@ const blogPosts = [
   },
 ]
 
+
 export const AboutPage = () => {
   return (
     <PublicLayout>
@@ -371,15 +372,3 @@ export const AboutPage = () => {
     </PublicLayout>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-

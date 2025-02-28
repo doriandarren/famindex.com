@@ -35,7 +35,6 @@ export const HomePage = () => {
     <PublicLayout>
 
       <main>
-        
         {/* Category section */}
         <section aria-labelledby="category-heading" className="bg-gray-50">
           <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">

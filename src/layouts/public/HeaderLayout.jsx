@@ -23,7 +23,7 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { Link, useLocation } from "react-router";
+import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
@@ -32,7 +32,6 @@ import { ChevronDownIcon } from '@heroicons/react/16/solid'
 
 export const HeaderLayout = () => {
   const [open, setOpen] = useState(false);
-  const location = useLocation();
   const { t, i18n } = useTranslation();
 
 
@@ -44,10 +43,11 @@ export const HeaderLayout = () => {
     ],
   };
 
-  const changeLanguaje = (event) => {
+  const setChangeLanguaje = (event) => {
     const selectedLanguage = event.target.value;
-    i18n.changeLanguage(selectedLanguage); // Cambia el idioma en i18next
-    localStorage.setItem("i18nextLng", selectedLanguage); // Guarda la preferencia
+    console.log(selectedLanguage);
+    i18n.changeLanguage(selectedLanguage);
+    localStorage.setItem("i18nextLng", selectedLanguage); 
   }
 
 
@@ -205,11 +205,11 @@ export const HeaderLayout = () => {
       </Dialog>
 
       {/* Web menu */}
-      <header className="relative overflow-hidden custom-class">
+      <header className="relative overflow-hidden">
         {/* Top navigation */}
         <nav
           aria-label="Top"
-          className="relative z-20 bg-white/90 backdrop-blur-xl backdrop-filter custom-class"
+          className="relative z-20 bg-white/90 backdrop-blur-xl backdrop-filter"
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center">
@@ -372,9 +372,8 @@ export const HeaderLayout = () => {
                     <select
                       id="location"
                       name="location"
-                      defaultValue="Canada"
                       value={i18n.language}
-                      onChange={changeLanguaje}
+                      onChange={(e) => setChangeLanguaje(e)}
                       className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                     >
                       <option value="es">Español</option>
