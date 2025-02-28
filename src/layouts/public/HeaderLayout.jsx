@@ -43,7 +43,7 @@ export const HeaderLayout = () => {
     ],
   };
 
-  const setChangeLanguaje = (event) => {
+  const setChangeLanguage = (event) => {
     const selectedLanguage = event.target.value;
     console.log(selectedLanguage);
     i18n.changeLanguage(selectedLanguage);
@@ -370,11 +370,11 @@ export const HeaderLayout = () => {
                       id="location"
                       name="location"
                       value={i18n.language}
-                      onChange={(e) => setChangeLanguaje(e)}
+                      onChange={(e) => setChangeLanguage(e)}
                       className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                     >
-                      <option value="es">Español</option>
-                      <option value="en">Inglés</option>
+                      <option value="es">{ t("languages.es") }</option>
+                      <option value="en">{ t("languages.en") }</option>
                     </select>
                     <ChevronDownIcon
                       aria-hidden="true"
