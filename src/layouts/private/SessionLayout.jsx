@@ -31,10 +31,7 @@ import {
 import { useLocation, useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
 
-const navigation = [
-  { name: "Dashboard", href: "/admin/dashboard", icon: HomeIcon, current: false },
-  { name: "Team", href: "/admin/team", icon: UsersIcon, current: true },
-];
+
 
 
 
@@ -55,6 +52,13 @@ export const SessionLayout = ({ children }) => {
   const onLogout = () => {
     navigate("/auth/login");
   }
+
+  
+
+  const navigation = [
+    { name: t("dashboard"), href: "/admin/dashboard", icon: HomeIcon, current: false },
+    { name: t("team"), href: "/admin/team", icon: UsersIcon, current: true },
+  ];
 
 
   const userNavigation = [

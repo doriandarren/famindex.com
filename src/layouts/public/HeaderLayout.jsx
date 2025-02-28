@@ -51,9 +51,6 @@ export const HeaderLayout = () => {
   }
 
 
-  
-  
-
   return (
     <>
       {/* Mobile menu */}

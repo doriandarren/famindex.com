@@ -167,5 +167,6 @@
   "account_holder": "Titular de la cuenta",
   "due_date_by_days": "A cuantos días",
   "due_date_days": "Vencimiento el día",
-  "customer_code": "Código de cliente"
+  "customer_code": "Código de cliente",
+  "team": "Equipo"
 }

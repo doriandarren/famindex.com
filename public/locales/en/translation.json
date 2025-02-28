@@ -167,5 +167,6 @@
   "account_holder": "Account Holder",
   "due_date_by_days": "Due in Days",
   "due_date_days": "Due Date",
-  "customer_code": "Customer Code"
+  "customer_code": "Customer Code",
+  "team": "Team"
 }
