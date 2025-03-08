@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router";
 import { DashboardPage } from "../pages/DashboardPage";
-import { TeamPage } from "../pages/TeamPage";
+import { TeamPage, TeamCreatePage } from "../pages";
 
 
 export const DashboardRoutes = () => {
@@ -8,7 +8,10 @@ export const DashboardRoutes = () => {
     <Routes>
       
       <Route path="/dashboard" element={ <DashboardPage /> } />
+      
+
       <Route path="/team" element={ <TeamPage /> } />
+      <Route path="/team/create" element={ <TeamCreatePage /> } />
 
       <Route path="/*" element={ <Navigate to="/auth/dashboard" /> } />
       

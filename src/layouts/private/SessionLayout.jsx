@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-
 import {
   Dialog,
   DialogBackdrop,
@@ -15,64 +14,54 @@ import {
 import {
   Bars3Icon,
   BellIcon,
-  CalendarIcon,
-  ChartPieIcon,
-  Cog6ToothIcon,
-  DocumentDuplicateIcon,
-  FolderIcon,
   HomeIcon,
   UsersIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
-  MagnifyingGlassIcon,
 } from "@heroicons/react/20/solid";
-import { useLocation, useNavigate } from "react-router";
+import { NavLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useDispatch, useSelector } from "react-redux";
+import { startLogout } from "../../store/auth/thunks";
+import Logo from '../../assets/images/logo.svg';
 
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+
 export const SessionLayout = ({ children }) => {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
-
   const location = useLocation();
-  const navigate = useNavigate();
-
   const { t, i18n } = useTranslation();
-  
+  const dispatch = useDispatch();
+  const { status, displayName } = useSelector(state => state.auth);
 
   const onLogout = () => {
-    navigate("/auth/login");
+    dispatch( startLogout() );
   }
-
-  
 
   const navigation = [
     { name: t("dashboard"), href: "/admin/dashboard", icon: HomeIcon, current: false },
     { name: t("team"), href: "/admin/team", icon: UsersIcon, current: true },
   ];
 
-
   const userNavigation = [
     { name: t("profile"), href: "#" },
     { name: t("logout"), onClick: onLogout },
   ];
-
 
   const updatedNavigation = navigation.map((item) => ({
     ...item,
     current: location.pathname === item.href, // Marca como activo si la ruta coincide
   }));
 
-
   const setChangeLanguage = (event) => {
     const selectedLanguage = event.target.value;
-    console.log(selectedLanguage);
     i18n.changeLanguage(selectedLanguage);
     localStorage.setItem("i18nextLng", selectedLanguage); 
   }
@@ -111,11 +100,11 @@ export const SessionLayout = ({ children }) => {
               </div>
             </TransitionChild>
             {/* Sidebar component, swap this element with another sidebar if you like */}
-            <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4 ring-1 ring-white/10">
+            <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-primary px-6 pb-4 ring-1 ring-white/10">
               <div className="flex h-16 shrink-0 items-center">
                 <img
-                  alt="Your Company"
-                  src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                  alt={ import.meta.env.VITE_APP_NAME }
+                  src={Logo}
                   className="h-8 w-auto"
                 />
                 <span className="text-white text-2xl ml-3 font-bold"> { import.meta.env.VITE_APP_NAME } </span>
@@ -126,12 +115,12 @@ export const SessionLayout = ({ children }) => {
                     <ul role="list" className="-mx-2 space-y-1">
                       {updatedNavigation.map((item) => (
                         <li key={item.name}>
-                          <a
-                            href={item.href}
+                          <NavLink
+                            to={item.href}
                             className={classNames(
                               item.current
-                                ? "bg-gray-800 text-white"
-                                : "text-gray-400 hover:bg-gray-800 hover:text-white",
+                                ? "bg-primary-dark text-white"
+                                : "text-gray-200 hover:bg-gray-300/80 hover:text-white",
                               "group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold"
                             )}
                           >
@@ -140,7 +129,7 @@ export const SessionLayout = ({ children }) => {
                               className="size-6 shrink-0"
                             />
                             {item.name}
-                          </a>
+                          </NavLink>
                         </li>
                       ))}
                     </ul>
@@ -156,11 +145,11 @@ export const SessionLayout = ({ children }) => {
       {/* Static sidebar for desktop */}
       <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
         {/* Sidebar component, swap this element with another sidebar if you like */}
-        <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4">
+        <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-primary px-6 pb-4">
           <div className="flex h-16 shrink-0 items-center">
             <img
-              alt="Your Company"
-              src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+              alt={ import.meta.env.VITE_APP_NAME }
+              src={Logo}
               className="h-8 w-auto"
             />
             <span className="text-white text-2xl ml-3 font-bold">{ import.meta.env.VITE_APP_NAME } </span>
@@ -171,12 +160,12 @@ export const SessionLayout = ({ children }) => {
                 <ul role="list" className="-mx-2 space-y-1">
                   {updatedNavigation.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
+                      <NavLink
+                        to={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-gray-800 text-white"
-                            : "text-gray-400 hover:bg-gray-800 hover:text-white",
+                            ? "bg-primary-dark text-white"
+                            : "text-gray-200 hover:bg-gray-300/80 hover:text-white",
                           "group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold"
                         )}
                       >
@@ -185,7 +174,7 @@ export const SessionLayout = ({ children }) => {
                           className="size-6 shrink-0"
                         />
                         {item.name}
-                      </a>
+                      </NavLink>
                     </li>
                   ))}
                 </ul>
@@ -213,14 +202,18 @@ export const SessionLayout = ({ children }) => {
           />
 
           <div className="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
-            <div className="grid flex-1 grid-cols-1"></div>
+            <div className="grid flex-1 grid-cols-1 mt-5">
+            <div>
+              <h2 style={{ color: "red" }}>{status}</h2>
+            </div>
+            </div>
             <div className="flex items-center gap-x-4 lg:gap-x-6">
               <button
                 type="button"
                 className="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500"
               >
                 <span className="sr-only">View notifications</span>
-                <BellIcon aria-hidden="true" className="size-6" />
+                <BellIcon aria-hidden="true" className="size-6" /> 
               </button>
 
               {/* Separator */}
@@ -228,21 +221,19 @@ export const SessionLayout = ({ children }) => {
                 aria-hidden="true"
                 className="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-900/10"
               />
-
-
-                    <select
-                      id="location"
-                      name="location"
-                      value={i18n.language}
-                      onChange={(e) => setChangeLanguage(e)}
-                      className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                    >
-                      <option value="es">{ t("languages.es") }</option>
-                      <option value="en">{ t("languages.en") }</option>
-                    </select>
+                <select
+                  id="location"
+                  name="location"
+                  value={i18n.language}
+                  onChange={(e) => setChangeLanguage(e)}
+                  className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                >
+                  <option value="es">{ t("languages.es") }</option>
+                  <option value="en">{ t("languages.en") }</option>
+                </select>
               {/* Profile dropdown */}
               <Menu as="div" className="relative">
-                <MenuButton className="-m-1.5 flex items-center p-1.5">
+                <MenuButton className="-m-1.5 flex items-center p-1.5 mr-5">
                   <span className="sr-only">Open user menu</span>
                   <img
                     alt=""
@@ -254,7 +245,7 @@ export const SessionLayout = ({ children }) => {
                       aria-hidden="true"
                       className="ml-4 text-sm/6 font-semibold text-gray-900"
                     >
-                      User
+                      { displayName }
                     </span>
                     <ChevronDownIcon
                       aria-hidden="true"
