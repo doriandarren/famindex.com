@@ -50,8 +50,8 @@ export const SessionLayout = ({ children }) => {
 
   const onProfile = () => {
 
-    navigate("/admin/profile");
-
+    navigate("/admin/profile"); 
+    
   }
 
   const navigation = [
