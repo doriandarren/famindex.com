@@ -57,6 +57,7 @@ export const SessionLayout = ({ children }) => {
   const navigation = [
     { name: t("dashboard"), href: "/admin/dashboard", icon: HomeIcon, current: false },
     { name: t("team"), href: "/admin/team", icon: UsersIcon, current: true },
+    { name: t("customers"), href: "/admin/customers", icon: UsersIcon, current: false },
   ];
 
   const userNavigation = [
