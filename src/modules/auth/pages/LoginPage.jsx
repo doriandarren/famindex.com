@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { Button } from "../../../components/Buttons/Button";
 import { startLoginWithEmailPassword } from "../../../store/auth/thunks";
 
+
 export const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
