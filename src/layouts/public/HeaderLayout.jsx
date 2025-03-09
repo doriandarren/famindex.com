@@ -23,11 +23,10 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
-
 
 
 export const HeaderLayout = () => {
@@ -45,11 +44,11 @@ export const HeaderLayout = () => {
 
   const setChangeLanguage = (event) => {
     const selectedLanguage = event.target.value;
-    console.log(selectedLanguage);
     i18n.changeLanguage(selectedLanguage);
     localStorage.setItem("i18nextLng", selectedLanguage); 
   }
-
+  
+  
 
   return (
     <>

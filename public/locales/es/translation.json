@@ -168,5 +168,9 @@
   "due_date_by_days": "A cuantos días",
   "due_date_days": "Vencimiento el día",
   "customer_code": "Código de cliente",
-  "team": "Equipo"
+  "team": "Equipo",
+  "next": "Siguiente",
+  "back": "Anterior",
+  "show": "Mostrar",
+  "no_results_found": "No se encontraron resultados."
 }

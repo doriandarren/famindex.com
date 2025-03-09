@@ -1,25 +1,26 @@
-import { useNavigate } from "react-router";
+import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import ImgLogo from "../../../assets/images/logo-white.svg";
+import ImgLogo from "../../../assets/images/logo.svg";
 import EyeOff from '../../../assets/images/eye_off.svg';
 import EyeOn from '../../../assets/images/eye_on.svg';
-import { useState } from "react";
 import { Preloader } from "../../../components/Preloader/Preloader";
 import { useTranslation } from "react-i18next";
+import { Button } from "../../../components/Buttons/Button";
+import { startLoginWithEmailPassword } from "../../../store/auth/thunks";
+
 
 export const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { t } = useTranslation();
+  const { status, errorMessage } = useSelector( state => state.auth );
 
 
-  const onSubmit = async (e) => {
+  const onSubmit = async(e) => {
     e.preventDefault();
-    setLoading(true);
 
     if (!email || !password) {
       alert("Los campos son requeridos");
@@ -28,12 +29,9 @@ export const LoginPage = () => {
     }
 
     try {
-      //await dispatch(login({ email, password }));
-      setLoading(false);
-      navigate("/admin/dashboard");
+      dispatch(startLoginWithEmailPassword({ email, password }));  
     } catch (error) {
       console.log(error);
-      setLoading(false);
       alert("Credenciales incorrectas");
     }
   };
@@ -58,26 +56,34 @@ export const LoginPage = () => {
             </div>
           </div>
         </div>
-
+      
         <div className="h-screen xl:h-auto flex xl:py-0 my-10 xl:my-0 bg-white ">
           <div className="my-auto mx-auto xl:ml-20 xl:bg-transparent px-5 sm:px-8 py-8 xl:p-0 rounded-md shadow-md xl:shadow-none w-full sm:w-3/4 lg:w-2/4 xl:w-auto animate__animated animate__bounceInRight">
-            <form onSubmit={onSubmit}>
+
+            { status }
+            
+            { errorMessage && (<div>{errorMessage}</div>) }
+            
+
+            <form 
+              onSubmit={onSubmit}
+            >
               <h2 className="intro-x text-primary text-2xl xl:text-3xl text-center xl:text-left">
                 {t("login_page.title")}
               </h2>
               <div className="intro-x mt-8">
                 <input
                   type="email"
-                  className="intro-x form-control py-3 px-4 block mb-3"
+                  className="form-control w-full h-10 px-4 py-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline mb-3"
                   required
                   placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                />
+              />
 
-                <div className="relative">
+              <div className="relative">
                   <input
-                    className="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline"
+                    className="form-control w-full h-10 px-4 py-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline"
                     type={showPassword ? "text" : "password"}
                     id="password"
                     value={password}
@@ -108,11 +114,17 @@ export const LoginPage = () => {
                 </div>
                 <a href="/reset">{t("login_page.forgot")}</a>
               </div>
+
+
               <div className="intro-x mt-5 xl:mt-8 text-center xl:text-left">
-                <button type="submit" className="btn-primary py-3 px-4 w-full xl:w-32 xl:mr-3 align-top">
-                {t("login_page.btn_login")}
-                </button>
+                <Button
+                  type="submit"
+                  disabled={status!=='not-authenticated'}
+                >
+                  {status === 'checking' ? "Cargando..." : t("login_page.btn_login")}
+                </Button>
               </div>
+              
             </form>
 
             <div className="intro-x mt-10 xl:mt-24 text-slate-600 text-center xl:text-left">

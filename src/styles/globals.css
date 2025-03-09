@@ -7,6 +7,15 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); */
 
 
+/*
+|--------------------------------------------------------------------------
+| Variables
+|--------------------------------------------------------------------------
+|
+*/ 
+@import "./variables.scss";
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -39,15 +48,21 @@
   --color-secondary: #0998FC;
   --color-secondary-light: #09C0FC;
   --color-secondary-dark: #0976FC;
-  
-  --color-error: #f44336;
+
+  --color-danger: #f44336;
+  --color-danger-dark: #b83329;
+  --color-danger-light: #ff7961;
+
   --color-success: #4caf50;
+  --color-success-light: #61e265;
+  --color-success-dark: #3a893d;
+  
   --color-navbar: #222831;
   --color-background: #f8fafc;
-  
+
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
-}
+} 
 
 
 
@@ -61,10 +76,11 @@
 |
 */
 @layer components {
-    
     /* Botones */
     .btn {
         @apply py-2 px-4 font-semibold rounded-lg shadow-md transition duration-300 ease-in-out;
+
+        color: #61e265;
     }
 
     .btn-primary {
@@ -122,3 +138,4 @@
         @apply py-2 px-4 rounded hover:bg-[var(--color-primary-dark)] transition duration-300 ease-in-out;
     }
 }
+
