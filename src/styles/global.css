@@ -1,31 +1,35 @@
 @import "tailwindcss";
 
 
+@import "tailwindcss";
+
 @theme {
     --font-display: "Roboto", "sans-serif";
-    --color-primary: #0096b2;
-    --color-primary-light: #00b4d6;
-    --color-primary-dark: #007a91;
-    --color-primary-alpha70: rgba(79, 157, 166, 0.7);
 
-    --color-secondary: #0998FC;
-    --color-secondary-light: #09C0FC;
-    --color-secondary-dark: #0976FC;
+    /* Famindex Orange Palette */
+    --color-primary: #ff7d00; /* naranja principal */
+    --color-primary-light: #ffa128; /* naranja claro */
+    --color-primary-dark: #f46200; /* naranja oscuro */
+    --color-primary-alpha70: rgba(255, 125, 0, 0.7);
 
-    --color-danger: #f44336;
-    --color-danger-light: #ff7961;
-    --color-danger-dark: #b83329;
+    --color-secondary: #ffa128; /* naranja claro */
+    --color-secondary-light: #ffcc68; /* amarillo anaranjado */
+    --color-secondary-dark: #f46200; /* naranja oscuro */
+
+    --color-danger: #f46200;
+    --color-danger-light: #ff7d00;
+    --color-danger-dark: #cc4c00;
     
-    --color-success: #4caf50;
-    --color-success-light: #61e265;
-    --color-success-dark: #3a893d;
+    --color-success: #ffc868;
+    --color-success-light: #ffe0a3;
+    --color-success-dark: #e5aa40;
     
-    --color-info: #FFB300;
-    --color-info-light: #FFD54F;
-    --color-info-dark: #FFA000;
+    --color-info: #ff9800;
+    --color-info-light: #ffb74d;
+    --color-info-dark: #f57c00;
     
-    --color-warning: #facc15;         
-    --color-warning-light: #fef9c3;   
+    --color-warning: #facc15;
+    --color-warning-light: #fef9c3;
     --color-warning-dark: #ca8a04;
     
     --color-neutral-light: #9CA3AF;
@@ -40,13 +44,11 @@
     --color-white-light: rgba(255, 255, 255, 0.4);
     --color-white-dark: #f0f0f0;
 
-    
     --color-navbar: #222831;
-    --color-background: #fff;
+    --color-background: #ffffff;
 
     --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
     --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
-
 
     /* Footer Colors */
     --color-footer-background: #222831;
@@ -54,10 +56,10 @@
     --color-footer-hover: #ffffff;
     --color-footer-border: rgba(255, 255, 255, 0.1);
     --color-footer-input-bg: rgba(255, 255, 255, 0.05);
-    --color-footer-input-outline: #4B5563; /* gray-700 */
-    --color-footer-input-focus: #0998FC; /* secondary */
-
+    --color-footer-input-outline: #4B5563;
+    --color-footer-input-focus: var(--color-primary);
 }
+
 
 @layer components {
     .btn {

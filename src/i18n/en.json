@@ -2,106 +2,106 @@
   "navbar": {
     "lang_es": "Español",
     "lang_en": "English",
-    "brand": "MySite",
+    "brand": "Famindex",
     "home": "Home",
     "about": "About",
     "contact": "Contact",
     "map": "Map",
     "login": "Login"
   },
- "home": {
+  "home": {
     "title": "Home",
-    "heading": "Welcome to La Meva Llar",
-    "description": "Tapas - Mediterranean style restaurant"
+    "heading": "Welcome to Famindex",
+    "description": "We develop tailor-made software, empower companies with creative solutions, and transform ideas into innovative technology."
   },
   "about": {
     "title": "About Us",
-    "heading": "Passion for every detail",
-    "description": "We create unique experiences blending food, atmosphere, and service so every visit feels special.",
-    "title1": "Flavors that define us",
-    "txt1": "At La Meva Llar, we celebrate the essence of Mediterranean cuisine with timeless recipes made from fresh, local ingredients.",
-    "title2": "A place to gather",
-    "txt2": "Our space is designed for people to come together and enjoy good food, heartfelt moments, and the warmth of home."
+    "heading": "Technology crafted with passion and creativity",
+    "description": "We are a company specialized in custom software development, creative and innovative solutions, offering ongoing support to help businesses grow with cutting-edge technology.",
+    "title1": "Tailor-made technology solutions",
+    "txt1": "We develop software tailored to your business’s real needs. No templates—each project is unique, functional, and elegant.",
+    "title2": "Continuous support and guidance",
+    "txt2": "We don’t just deliver products; we partner with your company, providing ongoing support, upgrades, and improvements to drive your growth."
   },
   "contact": {
-    "title": "Location & Hours",
-    "address": "📍 Buenos Aires Street, 12 – Barcelona",
-    "hours": "🕒 Monday to Sunday: 9:00 AM - 11:00 PM",
+    "title": "Contact Us",
+    "address": "📍 Offices in Barcelona, global remote service",
+    "hours": "🕒 Monday to Friday: 9:00 AM - 6:00 PM",
     "phone": "📞 +34 600 123 456",
-    "note": "* Special schedules on holidays"
+    "note": "* Extended support available for clients via remote assistance"
   },
   "footer": {
     "solutions": "Solutions",
     "solutions_list": {
-      "marketing": "Marketing",
-      "analytics": "Analytics",
-      "automation": "Automation",
-      "commerce": "Commerce",
-      "insights": "Insights"
+      "marketing": "Marketing Software",
+      "analytics": "Analytics Platforms",
+      "automation": "Process Automation",
+      "commerce": "Digital Commerce",
+      "insights": "Business Intelligence"
     },
     "support": "Support",
     "support_list": {
-      "submit_ticket": "Submit ticket",
+      "submit_ticket": "Submit a ticket",
       "documentation": "Documentation",
-      "guides": "Guides"
+      "guides": "Practical Guides"
     },
     "company": "Company",
     "company_list": {
-      "about": "About",
-      "blog": "Blog",
-      "jobs": "Jobs",
+      "about": "About Us",
+      "blog": "Tech Blog",
+      "jobs": "Careers",
       "press": "Press"
     },
     "legal": "Legal",
     "legal_list": {
-      "terms_of_service": "Terms of service",
-      "privacy_policy": "Privacy policy",
-      "license": "License"
+      "terms_of_service": "Terms of Service",
+      "privacy_policy": "Privacy Policy",
+      "license": "Usage License"
     },
     "newsletter": {
       "title": "Subscribe to our newsletter",
-      "description": "The latest news, articles, and resources, sent to your inbox weekly.",
+      "description": "Receive tech updates, software development articles, and useful resources straight to your inbox.",
       "placeholder": "Enter your email",
       "button": "Subscribe"
     },
-    "copyright": "All rights reserved."
+    "copyright": "Famindex © All rights reserved."
   },
   "map": {
-    "title": "Location",
-    "heading": "Your dining destination",
-    "description": "A place where every visit feels special."
+    "title": "Offices & Support",
+    "heading": "Accessible technology, wherever you are",
+    "description": "Physical offices in Barcelona and international remote support for businesses of all industries."
   },
   "seo": {
     "home": {
-      "title": "La Meva Llar | Mediterranean Restaurant",
-      "description": "La Meva Llar, a Mediterranean bar and restaurant offering breakfasts, tapas, homemade desserts, and flavorful dishes in a cozy and friendly atmosphere.",
-      "keywords": "la meva llar, mediterranean restaurant, tapas, breakfasts, desserts, homemade food, bar Buenos Aires, mediterranean bar, barcelona, bar barcelona",
-      "ogTitle": "La Meva Llar | Mediterranean Restaurant",
-      "ogDescription": "La Meva Llar, a Mediterranean bar and restaurant offering breakfasts, tapas, homemade desserts, and flavorful dishes in a cozy and friendly atmosphere.",
+      "title": "Famindex | Tailor-Made Software & Tech Solutions",
+      "description": "At Famindex, we create tailor-made software, efficient tech solutions, technical support, and custom digital platforms for companies.",
+      "keywords": "famindex, custom software, tech solutions, business support, creative technology, digital platforms, tailored development, enterprise software",
+      "ogTitle": "Famindex | Tailor-Made Software & Tech Solutions",
+      "ogDescription": "Custom software, creative solutions, and ongoing technical support to boost your company with cutting-edge technology.",
       "ogType": "website"
     },
     "about": {
-      "title": "La Meva Llar | About Us",
-      "description": "Discover La Meva Llar, a Mediterranean restaurant where we share authentic flavors, homemade recipes, and a cozy atmosphere to enjoy together.",
-      "keywords": "la meva llar, about us, who we are, mediterranean restaurant, restaurant history, homemade food, traditional tapas, mediterranean dishes, family atmosphere, mediterranean essence, cozy restaurant, mediterranean gastronomy, local food, tradition and flavor",
-      "ogTitle": "La Meva Llar | About Us",
-      "ogDescription": "Discover La Meva Llar, a Mediterranean restaurant where we share authentic flavors, homemade recipes, and a cozy atmosphere to enjoy together.",
+      "title": "Famindex | About Us",
+      "description": "Discover Famindex, a custom software development company offering innovative digital solutions and dedicated technical support for modern businesses.",
+      "keywords": "famindex, about us, software development, digital solutions, tech support, business technology, enterprise innovation, custom platforms",
+      "ogTitle": "Famindex | About Us",
+      "ogDescription": "We are a tailor-made software company with a creative approach and continuous support for growing businesses.",
       "ogType": "website"
     },
     "contact": {
-      "title": "La Meva Llar | Contact & Reservations",
-      "description": "Get in touch with La Meva Llar, a Mediterranean bar and restaurant. Book your table, check availability, or inquire about our menus and special events.",
-      "keywords": "la meva llar contact, book a table restaurant, mediterranean restaurant phone, contact restaurant, online booking bar, tapas restaurant, mediterranean restaurant reservations, contact bar restaurant, restaurant location, opening hours restaurant, family restaurant contact",
-      "ogTitle": "La Meva Llar | Contact & Reservations",
-      "ogDescription": "Get in touch with La Meva Llar, a Mediterranean bar and restaurant. Book your table, check availability, or inquire about our menus and special events.",
+      "title": "Famindex | Contact & Support",
+      "description": "Get in touch with Famindex for custom software development, digital solutions, or specialized tech support for your business.",
+      "keywords": "famindex contact, technical support, custom software development, tech consultancy, digital services, enterprise solutions",
+      "ogTitle": "Famindex | Contact & Support",
+      "ogDescription": "Contact us to develop your custom software or get specialized technical support for your business.",
       "ogType": "website"
     },
     "map": {
-      "title": "La Meva Llar | Map and Location",
-      "description": "Find La Meva Llar, a Mediterranean bar and restaurant. Check our exact location, how to get here, and plan your visit to enjoy tapas, breakfasts, and homemade dishes.",
-      "keywords": "la meva llar location, how to get to restaurant, mediterranean restaurant map, restaurant near me, family restaurant location, restaurant with terrace address, La Meva Llar map, bar restaurant location, mediterranean restaurant address, Costa Brava restaurant, mediterranean restaurant parking",
-      "ogTitle": "La Meva Llar | Map and Location",
-      "ogDescription": "Find La Meva Llar, a Mediterranean bar and restaurant. Check our exact location, how to get here, and plan your visit to enjoy tapas, breakfasts, and homemade dishes.",
+      "title": "Famindex | Offices & Remote Support",
+      "description": "Find Famindex in Barcelona with global reach, offering remote support and tailored technology solutions for businesses worldwide.",
+      "keywords": "famindex location, remote support, tech company barcelona, custom software development, global business support, digital services provider",
+      "ogTitle": "Famindex | Offices & Remote Support",
+      "ogDescription": "Offices in Barcelona and remote support available for businesses worldwide.",
       "ogType": "website"
     }
   }
