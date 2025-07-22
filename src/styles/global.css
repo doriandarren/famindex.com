@@ -161,12 +161,12 @@
 
 
     .active{
-        @apply text-primary border-b-2;
+        @apply text-primary-light border-b-2;
     }
 
 
     .active-mobile{
-        @apply text-primary;
+        @apply text-primary-light;
     }
     
 
