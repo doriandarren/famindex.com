@@ -5,7 +5,6 @@
     "brand": "MySite",
     "home": "Home",
     "about": "About",
-    "menu": "Menu",
     "contact": "Contact",
     "map": "Map",
     "login": "Login"
@@ -67,11 +66,6 @@
     },
     "copyright": "All rights reserved."
   },
-  "menu": {
-    "title": "Our Menu",
-    "heading": "Discover unique flavors",
-    "description": "A curated selection of dishes designed to delight your senses with the best of Mediterranean cuisine"
-  },
   "map": {
     "title": "Location",
     "heading": "Your dining destination",
@@ -108,14 +102,6 @@
       "keywords": "la meva llar location, how to get to restaurant, mediterranean restaurant map, restaurant near me, family restaurant location, restaurant with terrace address, La Meva Llar map, bar restaurant location, mediterranean restaurant address, Costa Brava restaurant, mediterranean restaurant parking",
       "ogTitle": "La Meva Llar | Map and Location",
       "ogDescription": "Find La Meva Llar, a Mediterranean bar and restaurant. Check our exact location, how to get here, and plan your visit to enjoy tapas, breakfasts, and homemade dishes.",
-      "ogType": "website"
-    },
-    "menu": {
-      "title": "La Meva Llar | Our Menu and Dishes",
-      "description": "Discover La Meva Llar's menu: homemade dishes, Mediterranean tapas, breakfasts, and desserts in a cozy restaurant with traditional and quality cuisine.",
-      "keywords": "la meva llar menu, mediterranean restaurant menu, tapas restaurant, breakfast menu, homemade desserts, mediterranean dishes, bar restaurant menu, mediterranean specialties, homemade cuisine menu, La Meva Llar menu, updated menu, Costa Brava menu, typical mediterranean dishes",
-      "ogTitle": "La Meva Llar | Our Menu and Dishes",
-      "ogDescription": "Discover La Meva Llar's menu: homemade dishes, Mediterranean tapas, breakfasts, and desserts in a cozy restaurant with traditional and quality cuisine.",
       "ogType": "website"
     }
   }
