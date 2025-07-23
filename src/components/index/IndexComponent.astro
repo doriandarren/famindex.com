@@ -36,10 +36,24 @@ const { lang, t, title } = getI18nProps(Astro.params, 'home');
     </div>
 
     <div class="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img src="/images/hero_2.webp" alt="" class="aspect-3/2 object-cover lg:aspect-auto lg:size-full" />
+      <img src="/images/hero_2.svg" alt="" class="aspect-3/2 object-cover lg:aspect-auto lg:size-full" />
     </div>
   </div>
 
+<section class="my-20 px-4">
+  <h2 class="text-center text-3xl font-bold text-primary mb-6">Descubre Famindex</h2>
+
+  <div class="mx-auto w-full max-w-5xl aspect-video rounded-xl overflow-hidden shadow-lg">
+    <video
+      src="/videos/spot_famindex.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      class="w-full h-full object-cover"
+    ></video>
+  </div>
+</section>
 
 
 

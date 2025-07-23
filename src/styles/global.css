@@ -4,7 +4,7 @@
 @import "tailwindcss";
 
 @theme {
-    --font-display: "Roboto", "sans-serif";
+    --font-display: "Manrope", "sans-serif";
 
     /* Famindex Orange Palette */
     --color-primary: #ff7d00; /* naranja principal */
@@ -178,4 +178,8 @@
     
 
 
+}
+
+html {
+  font-family: var(--font-display);
 }
