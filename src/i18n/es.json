@@ -6,6 +6,7 @@
     "home": "Inicio",
     "about": "Nosotros",
     "contact": "Contacto",
+    "portfolio": "Portafolio",
     "map": "Mapa",
     "login": "Acceso"
   },
@@ -71,6 +72,11 @@
     "heading": "Tecnología accesible estés donde estés",
     "description": "Oficinas físicas en Barcelona y soporte remoto internacional para empresas de cualquier sector."
   },
+  "portfolio": {
+    "title": "Portafolio",
+    "heading": "Nuestros proyectos",
+    "description": "Explora nuestras plantillas y desarrollos a medida para diferentes sectores."
+  },
   "seo": {
     "home": {
       "title": "Famindex | Software a medida y soluciones tecnológicas",
@@ -94,6 +100,14 @@
       "keywords": "famindex contacto, soporte técnico, desarrollo software a medida, contacto empresa tecnológica, consultoría tecnológica, servicios digitales, software para empresas",
       "ogTitle": "Famindex | Contacto y Soporte",
       "ogDescription": "Contáctanos para crear tu software a medida o recibir soporte técnico especializado para tu empresa.",
+      "ogType": "website"
+    },
+    "portfolio": {
+      "title": "Famindex | Portafolio de Proyectos",
+      "description": "Explora el portafolio de Famindex y descubre nuestras plantillas personalizadas y proyectos de software a medida desarrollados para diferentes sectores.",
+      "keywords": "famindex portafolio, proyectos famindex, plantillas web personalizadas, software a medida, diseño digital, soluciones empresariales, desarrollos tecnológicos",
+      "ogTitle": "Famindex | Portafolio de Proyectos",
+      "ogDescription": "Conoce los proyectos de software y las plantillas diseñadas por Famindex para empresas de distintos sectores.",
       "ogType": "website"
     },
     "map": {

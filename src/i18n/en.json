@@ -1,34 +1,35 @@
 {
   "navbar": {
-    "lang_es": "Español",
+    "lang_es": "Spanish",
     "lang_en": "English",
     "brand": "Famindex",
     "home": "Home",
     "about": "About",
     "contact": "Contact",
+    "portfolio": "Portfolio",
     "map": "Map",
     "login": "Login"
   },
   "home": {
     "title": "Home",
     "heading": "Welcome to Famindex",
-    "description": "We develop tailor-made software, empower companies with creative solutions, and transform ideas into innovative technology."
+    "description": "We develop custom software, empower companies with creative solutions, and transform ideas into innovative technology."
   },
   "about": {
     "title": "About Us",
-    "heading": "Technology crafted with passion and creativity",
-    "description": "We are a company specialized in custom software development, creative and innovative solutions, offering ongoing support to help businesses grow with cutting-edge technology.",
-    "title1": "Tailor-made technology solutions",
-    "txt1": "We develop software tailored to your business’s real needs. No templates—each project is unique, functional, and elegant.",
-    "title2": "Continuous support and guidance",
-    "txt2": "We don’t just deliver products; we partner with your company, providing ongoing support, upgrades, and improvements to drive your growth."
+    "heading": "Technology built with passion and creativity",
+    "description": "We are a company specialized in developing custom software, creative and innovative solutions, offering support to companies to help them grow with cutting-edge technology.",
+    "title1": "Tailored tech solutions",
+    "txt1": "We create software tailored to your real business needs. No templates: every project is unique, functional, and elegant.",
+    "title2": "Continuous support and improvement",
+    "txt2": "We don’t just deliver products, we support your company with ongoing help, updates, and enhancements that drive growth."
   },
   "contact": {
     "title": "Contact Us",
     "address": "📍 Offices in Barcelona, global remote service",
-    "hours": "🕒 Monday to Friday: 9:00 AM - 6:00 PM",
+    "hours": "🕒 Monday to Friday: 9:00 - 18:00",
     "phone": "📞 +34 600 123 456",
-    "note": "* Extended support available for clients via remote assistance"
+    "note": "* We also provide after-hours remote support for clients"
   },
   "footer": {
     "solutions": "Solutions",
@@ -41,67 +42,80 @@
     },
     "support": "Support",
     "support_list": {
-      "submit_ticket": "Submit a ticket",
+      "submit_ticket": "Submit Ticket",
       "documentation": "Documentation",
       "guides": "Practical Guides"
     },
     "company": "Company",
     "company_list": {
-      "about": "About Us",
+      "about": "About us",
       "blog": "Tech Blog",
-      "jobs": "Careers",
+      "jobs": "Work with us",
       "press": "Press"
     },
     "legal": "Legal",
     "legal_list": {
       "terms_of_service": "Terms of Service",
       "privacy_policy": "Privacy Policy",
-      "license": "Usage License"
+      "license": "License"
     },
     "newsletter": {
       "title": "Subscribe to our newsletter",
-      "description": "Receive tech updates, software development articles, and useful resources straight to your inbox.",
+      "description": "Get tech updates, software development articles, and useful resources straight to your inbox.",
       "placeholder": "Enter your email",
       "button": "Subscribe"
     },
     "copyright": "Famindex © All rights reserved."
   },
   "map": {
-    "title": "Offices & Support",
-    "heading": "Accessible technology, wherever you are",
-    "description": "Physical offices in Barcelona and international remote support for businesses of all industries."
+    "title": "Offices and Support",
+    "heading": "Technology accessible from anywhere",
+    "description": "Physical offices in Barcelona and remote international support for companies in any sector."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "heading": "Our Projects",
+    "description": "Explore our custom templates and tailored software solutions across different industries."
   },
   "seo": {
     "home": {
-      "title": "Famindex | Tailor-Made Software & Tech Solutions",
-      "description": "At Famindex, we create tailor-made software, efficient tech solutions, technical support, and custom digital platforms for companies.",
-      "keywords": "famindex, custom software, tech solutions, business support, creative technology, digital platforms, tailored development, enterprise software",
-      "ogTitle": "Famindex | Tailor-Made Software & Tech Solutions",
-      "ogDescription": "Custom software, creative solutions, and ongoing technical support to boost your company with cutting-edge technology.",
+      "title": "Famindex | Custom Software and Tech Solutions",
+      "description": "At Famindex we build tailored software for businesses, efficient tech solutions, technical support, and custom digital platforms.",
+      "keywords": "famindex, custom software, tech development, creative solutions, business support, tailored platforms, digital software, business technology",
+      "ogTitle": "Famindex | Custom Software and Tech Solutions",
+      "ogDescription": "Custom software, creative solutions, and technical support with cutting-edge technology for your business.",
       "ogType": "website"
     },
     "about": {
       "title": "Famindex | About Us",
-      "description": "Discover Famindex, a custom software development company offering innovative digital solutions and dedicated technical support for modern businesses.",
-      "keywords": "famindex, about us, software development, digital solutions, tech support, business technology, enterprise innovation, custom platforms",
+      "description": "Discover Famindex, a company offering custom software development, technical support, and digital solutions for modern businesses.",
+      "keywords": "famindex, about us, software development, digital solutions, technical support, tech consulting, innovation, business software",
       "ogTitle": "Famindex | About Us",
-      "ogDescription": "We are a tailor-made software company with a creative approach and continuous support for growing businesses.",
+      "ogDescription": "We are a creative-driven company offering custom software development and continuous support for businesses.",
       "ogType": "website"
     },
     "contact": {
       "title": "Famindex | Contact & Support",
-      "description": "Get in touch with Famindex for custom software development, digital solutions, or specialized tech support for your business.",
-      "keywords": "famindex contact, technical support, custom software development, tech consultancy, digital services, enterprise solutions",
+      "description": "Contact Famindex to create custom software, digital solutions, or receive specialized technical support for your business.",
+      "keywords": "famindex contact, technical support, custom software, tech company contact, tech consulting, digital services, business software",
       "ogTitle": "Famindex | Contact & Support",
-      "ogDescription": "Contact us to develop your custom software or get specialized technical support for your business.",
+      "ogDescription": "Reach out to us to build your custom software or get technical support tailored to your business needs.",
+      "ogType": "website"
+    },
+    "portfolio": {
+      "title": "Famindex | Project Portfolio",
+      "description": "Explore Famindex’s portfolio and discover our custom templates and software projects developed for various industries.",
+      "keywords": "famindex portfolio, famindex projects, custom web templates, tailored software, digital design, business solutions, tech developments",
+      "ogTitle": "Famindex | Project Portfolio",
+      "ogDescription": "Discover the software projects and templates created by Famindex for companies across different sectors.",
       "ogType": "website"
     },
     "map": {
       "title": "Famindex | Offices & Remote Support",
-      "description": "Find Famindex in Barcelona with global reach, offering remote support and tailored technology solutions for businesses worldwide.",
-      "keywords": "famindex location, remote support, tech company barcelona, custom software development, global business support, digital services provider",
+      "description": "Find out where Famindex is located, with offices in Barcelona and global reach through remote support for tech companies.",
+      "keywords": "famindex location, remote support, tech company barcelona, software development barcelona, global business support, famindex HQ, remote tech, digital company support",
       "ogTitle": "Famindex | Offices & Remote Support",
-      "ogDescription": "Offices in Barcelona and remote support available for businesses worldwide.",
+      "ogDescription": "Based in Barcelona with remote support available for any business worldwide.",
       "ogType": "website"
     }
   }
