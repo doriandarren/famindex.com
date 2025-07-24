@@ -75,7 +75,11 @@
   "portfolio": {
     "title": "Portfolio",
     "heading": "Our Projects",
-    "description": "Explore our custom templates and tailored software solutions across different industries."
+    "description": "Explore our custom templates and tailored software solutions across different industries.",
+    "categories": {
+      "restaurant": "Restaurant",
+      "pets": "Pet Shop"
+    }
   },
   "seo": {
     "home": {

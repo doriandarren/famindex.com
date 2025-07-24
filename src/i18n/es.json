@@ -75,7 +75,11 @@
   "portfolio": {
     "title": "Portafolio",
     "heading": "Nuestros proyectos",
-    "description": "Explora nuestras plantillas y desarrollos a medida para diferentes sectores."
+    "description": "Explora nuestras plantillas y desarrollos a medida para diferentes sectores.",
+      "categories": {
+      "restaurant": "Restaurante",
+      "pets": "Tienda de Mascotas"
+    }
   },
   "seo": {
     "home": {
