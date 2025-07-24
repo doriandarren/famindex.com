@@ -109,6 +109,12 @@ const options = [
         class={`text-xl font-semibold ${currentPath.includes('/about') ? 'active' : 'text-white'}`}>
         {t("navbar.about")}
       </a> 
+
+      <a 
+        href={`/${lang}/portfolio`} 
+        class={`text-xl font-semibold ${currentPath.includes('/portfolio') ? 'active' : 'text-white'}`}>
+        {t("navbar.portfolio")}
+      </a>
   
       <a 
         href={`/${lang}/contact`} 
@@ -116,11 +122,7 @@ const options = [
         {t("navbar.contact")}
       </a>
 
-      <a 
-        href={`/${lang}/portfolio`} 
-        class={`text-xl font-semibold ${currentPath.includes('/portfolio') ? 'active' : 'text-white'}`}>
-        {t("navbar.portfolio")}
-      </a>
+      
 
     </div>
 

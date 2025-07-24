@@ -72,12 +72,12 @@
     "heading": "Technology accessible from anywhere",
     "description": "Physical offices in Barcelona and remote international support for companies in any sector."
   },
-  "portfolio": {
+    "portfolio": {
     "title": "Portfolio",
     "heading": "Our Projects",
-    "description": "Explore our custom templates and tailored software solutions across different industries.",
+    "description": "Explore our templates and custom developments for various industries.",
     "categories": {
-      "restaurant": "Restaurant",
+      "restaurant": "Restaurant & Café",
       "pets": "Pet Shop"
     }
   },

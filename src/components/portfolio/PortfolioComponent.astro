@@ -1,5 +1,5 @@
 ---
-import { getStaticPaths, getI18nProps } from '@i18n/helperi18n';
+import { getStaticPaths, getI18nProps } from "@i18n/helperi18n";
 
 export { getStaticPaths };
 
@@ -7,60 +7,68 @@ interface Props {
   title?: string;
 }
 
-const { lang, t, title } = getI18nProps(Astro.params, 'portfolio');
+const { lang, t, title } = getI18nProps(Astro.params, "portfolio");
 
 const templates = [
   {
     title: "La Meva Llar – Coffee & Bistro",
     category: t("portfolio.categories.restaurant"),
     image: "/images/template-bar.png",
-    link: "#"
+    link: "#",
   },
   {
     title: "Mascotas – Tienda de Mascotas",
     category: t("portfolio.categories.pets"),
     image: "/images/template-pet.jpg",
-    link: "#"
-  }
+    link: "#",
+  },
 ];
 ---
 
-<!-- Sección Hero con fondo -->
-<section
+<!-- Sección Hero sencilla -->
+<div class="section">
+  <section
   id="portfolio-hero"
-  class="relative bg-fixed bg-center bg-cover bg-no-repeat"
-  style="background-image: url('/images/portfolio-bg.svg');"
+  class="bg-white text-black py-6 px-6 text-center"
 >
-  <div class="absolute inset-0 bg-black/60"></div>
-
-  <div class="relative z-10 flex flex-col items-center justify-center min-h-[60vh] px-6 text-center text-white space-y-3">
-    <h2 class="text-4xl font-bold">{t("portfolio.heading")}</h2>
-    <p class="text-lg max-w-2xl">{t("portfolio.description")}</p>
-  </div>
+  <h2 class="text-3xl md:text-4xl font-bold mb-2">
+    {t("portfolio.heading")}
+  </h2>
+  <p class="text-base md:text-lg max-w-2xl mx-auto">
+    {t("portfolio.description")}
+  </p>
 </section>
 
-<!-- Sección de tarjetas de templates -->
-<section id="portfolio-list" class="py-20 px-4 md:px-8 lg:px-16 bg-gray-100 dark:bg-gray-900">
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
-    {templates.map(template => (
-      <a 
-        href={template.link} 
-        class="group block bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden"
-      >
-        <img 
-          src={template.image} 
-          alt={template.title} 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-            {template.title}
-          </h3>
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            {template.category}
-          </p>
-        </div>
-      </a>
-    ))}
-  </div>
-</section>
+
+
+  <!-- Lista de plantillas -->
+  <section
+    id="portfolio-list"
+    class="py-20 px-4 md:px-8 lg:px-16"
+  >
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      {
+        templates.map((template) => (
+          <a
+            href={template.link}
+            class="group block bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden"
+          >
+            <img
+              src={template.image}
+              alt={template.title}
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                {template.title}
+              </h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                {template.category}
+              </p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</div>

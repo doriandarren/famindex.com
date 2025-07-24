@@ -72,13 +72,13 @@
     "heading": "Tecnología accesible estés donde estés",
     "description": "Oficinas físicas en Barcelona y soporte remoto internacional para empresas de cualquier sector."
   },
-  "portfolio": {
+ "portfolio": {
     "title": "Portafolio",
     "heading": "Nuestros proyectos",
     "description": "Explora nuestras plantillas y desarrollos a medida para diferentes sectores.",
-      "categories": {
-      "restaurant": "Restaurante",
-      "pets": "Tienda de Mascotas"
+    "categories": {
+      "restaurant": "Restaurante y cafetería",
+      "pets": "Tienda de mascotas"
     }
   },
   "seo": {
