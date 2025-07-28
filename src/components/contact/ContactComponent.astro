@@ -37,7 +37,7 @@ const { lang, t, title } = getI18nProps(Astro.params, 'contact');
     <p class="text-center">{t("map.description")}</p>
   </div>
 
-  <div class="max-w-5xl mx-auto mt-8 px-4">
+  <div class="max-w-5xl mx-auto mt-8 px-4 mb-20">
     <MapComponentReact client:only="react" />
   </div>
 </section>
