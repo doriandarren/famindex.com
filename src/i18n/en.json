@@ -22,7 +22,33 @@
     "title1": "Tailored tech solutions",
     "txt1": "We create software tailored to your real business needs. No templates: every project is unique, functional, and elegant.",
     "title2": "Continuous support and improvement",
-    "txt2": "We don’t just deliver products, we support your company with ongoing help, updates, and enhancements that drive growth."
+    "txt2": "We don’t just deliver products, we support your company with ongoing help, updates, and enhancements that drive growth.",
+    "team": {
+      "title": "Team Famindex",
+      "subtitle": "“Famindex” arises from who we are and what we are passionate about in programming. We all share a passion for video games, but what truly unites us is the commitment to creating unique digital solutions. Each member contributes experience, creativity, and a different perspective that enriches the team.",
+      "members": {
+        "member1": {
+          "name": "Dorian González",
+          "role": "Fullstack Senior — End-to-end development specialist",
+          "bio": "The most experienced member of the team, bringing technical strength, global vision, and leadership to ensure quality and scalability in every project."
+        },
+        "member2": {
+          "name": "Milena Aguilar",
+          "role": "Web Developer — Web design & development",
+          "bio": "With a strong interest in web design and programming, contributes freshness, creativity, and an innovative outlook to the team."
+        },
+        "member3": {
+          "name": "Dilan González",
+          "role": "Web Developer — Emerging developer",
+          "bio": "The youngest member of the team, eager to learn and grow. His passion for programming drives new ideas and fresh approaches."
+        },
+        "member4": {
+          "name": "Dariana González",
+          "role": "User Experience — Critical eye & structural vision",
+          "bio": "Passionate about architecture, structures, and building design. She brings an analytical, detail-oriented perspective that enhances the user experience and final product quality."
+        }
+      }
+    }
   },
   "contact": {
     "title": "Contact Us",
@@ -72,7 +98,7 @@
     "heading": "Technology accessible from anywhere",
     "description": "Physical offices in Barcelona and remote international support for companies in any sector."
   },
-    "portfolio": {
+  "portfolio": {
     "title": "Portfolio",
     "heading": "Our Projects",
     "description": "Explore our templates and custom developments for various industries.",

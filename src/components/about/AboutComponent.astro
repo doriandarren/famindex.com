@@ -2,79 +2,71 @@
 import { getStaticPaths, getI18nProps } from '@i18n/helperi18n';
 export { getStaticPaths };
 
+interface Props { title?: string; }
 
-interface Props {
-  title?: string; 
-}
+const { lang, t } = getI18nProps(Astro.params, 'about');
+const tr = (key: string) => t(key as any);
 
-
-const { lang, t, title } = getI18nProps(Astro.params, 'about');
-
+const team = [
+  { id: 'member1', img: '/images/Dorian.webp', ratio: 'aspect-[4/5]' },
+  { id: 'member2', img: '/images/Mile.webp',   ratio: 'aspect-[4/5]' },
+  { id: 'member3', img: '/images/Dilan.webp',  ratio: 'aspect-[4/5]' },
+  { id: 'member4', img: '/images/Dari.webp',   ratio: 'aspect-[4/5]' },
+];
 ---
 
-<!-- About Section -->
-<section id="about">
-  <div class="container mx-auto px-6">
-    <h2>{t("about.title")}</h2>
-    <p class="text-center mb-15 text">{t("about.description")}</p>
-    
-    <!-- Fila 1 -->
-    <div class="about-row flex flex-wrap items-center justify-center md:justify-between">
-      
-      <div
-        class="about-text w-full md:w-1/2"
-        data-aos="fade-right"
-        data-aos-duration="1200"
+<section id="about" class="bg-white pt-12 pb-20 sm:pt-4 sm:pb-10">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <!-- Encabezado -->
+    <div class="mx-auto max-w-2xl sm:text-center">
+      <h2
+        class="text-4xl font-semibold tracking-tight text-primary sm:text-5xl"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        {t('about.team.title')}
+      </h2>
+      <p
+        class="mt-6 text-lg/8 text-black-light"
+        data-aos="fade-up"
+        data-aos-duration="800"
         data-aos-delay="100"
-        data-aos-easing="ease-in-out"
       >
-        
-        <h2 class="text-3xl font-semibold text-primary text-center max-w-xl mx-auto" data-i18n="about_title1">
-          {t('about.title1')}
-        </h2>
-        <p class="mt-4 text-xl text-neutral-light text-center max-w-xl mx-auto" data-i18n="about_txt1">
-          {t('about.txt1')}
-        </p>
-
-      </div>
-      <div
-        class="about-img w-full md:w-1/2 mt-8 md:mt-0"
-        data-aos="fade-left"
-        data-aos-duration="1200"
-        data-aos-delay="200"
-        data-aos-easing="ease-in-out"
-      >
-        <img src="/images/about_2.svg" alt="Plato mediterráneo" class="w-full h-auto rounded-lg" />
-      </div>
+        {t('about.team.subtitle')}
+      </p>
     </div>
 
-    <!-- Fila 2 (zigzag) -->
-    <div class="about-row flex flex-wrap items-center justify-between mb-16">
-      <div
-        class="about-text w-full md:w-1/2"
-        data-aos="fade-left"
-        data-aos-duration="1200"
-        data-aos-delay="100"
-        data-aos-easing="ease-in-out"
-      >
-          <img src="/images/about_1.svg" alt="Interior del restaurante" class="w-full h-auto rounded-lg" />
-      </div>
-      <div
-        class="about-img w-full md:w-1/2 mt-8 md:mt-0"
-        data-aos="fade-right"
-        data-aos-duration="1200"
-        data-aos-delay="200"
-        data-aos-easing="ease-in-out"
-      >
-      <h2 class="text-3xl font-semibold text-primary text-center max-w-xl mx-auto" data-i18n="about_title2">
-          {t('about.title2')}
-        </h2>
-        <p class="mt-4 text-xl text-neutral-light text-center max-w-xl mx-auto" data-i18n="about_txt2">
-  {t('about.txt2')}
-</p>
-
-        
-      </div>
-    </div>
+    <!-- Grid de miembros -->
+    <ul
+      role="list"
+      class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
+    >
+      {team.map((m, idx) => (
+        <li
+          class="flex flex-col gap-6 xl:flex-row"
+          data-aos={idx % 2 === 0 ? 'fade-right' : 'fade-left'}
+          data-aos-duration="900"
+          data-aos-delay={100 + idx * 50}
+        >
+          <img
+            src={m.img}
+            alt={tr(`about.team.members.${m.id}.name`)}
+            class={`${m.ratio} w-52 flex-none rounded-2xl object-cover outline -outline-offset-1 outline-gray-200`}
+            loading="lazy"
+          />
+          <div class="flex-auto">
+            <h3 class="text-lg/8 font-semibold tracking-tight text-dark">
+              {tr(`about.team.members.${m.id}.name`)}
+            </h3>
+            <p class="text-base/7 text-secondary">
+              {tr(`about.team.members.${m.id}.role`)}
+            </p>
+            <p class="mt-6 text-base/7 text-black-light">
+              {tr(`about.team.members.${m.id}.bio`)}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ul>
   </div>
 </section>

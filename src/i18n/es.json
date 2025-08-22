@@ -22,7 +22,33 @@
     "title1": "Soluciones tecnológicas personalizadas",
     "txt1": "Desarrollamos software adaptado a las necesidades reales de tu negocio. No usamos plantillas: cada proyecto es único, funcional y elegante.",
     "title2": "Soporte y acompañamiento continuo",
-    "txt2": "No solo creamos productos, acompañamos a tu empresa con soporte constante, evolutivos y mejoras que potencian tu crecimiento."
+    "txt2": "No solo creamos productos, acompañamos a tu empresa con soporte constante, evolutivos y mejoras que potencian tu crecimiento.",
+    "team": {
+      "title": "Equipo Famindex",
+      "subtitle": "“Famindex” surge de lo que somos con lo que nos apasiona en la programación. Compartimos la pasión por los videojuegos, pero también nos une el compromiso por crear soluciones digitales únicas. Cada miembro aporta experiencia, creatividad y una visión diferente que enriquece al equipo.",
+      "members": {
+        "member1": {
+          "name": "Dorian González",
+          "role": "Especialista en desarrollo integral - Fullstack Senior",
+          "bio": "El miembro con mayor experiencia del equipo, aporta solidez técnica, visión global y liderazgo en cada proyecto, asegurando calidad y escalabilidad."
+        },
+        "member2": {
+          "name": "Milena Aguilar",
+          "role": "Diseño y desarrollo web - Web Developer",
+          "bio": "Con gran interés en el diseño web y la programación, aporta frescura, creatividad y una mirada innovadora al equipo."
+        },
+        "member3": {
+          "name": "Dilan González",
+          "role": "Desarrollador emergente - Web Developer",
+          "bio": "El miembro más joven del equipo, con entusiasmo por aprender y crecer. Su pasión por la programación impulsa nuevas ideas y enfoques frescos."
+        },
+        "member4": {
+          "name": "Dariana González",
+          "role": "Crítica constructiva y visión estructural - User Experience",
+          "bio": "Apasionada por la arquitectura, las estructuras y la edificación. Aporta una perspectiva analítica y detallista que enriquece la experiencia de usuario y la calidad final del producto."
+        }
+      }
+    }
   },
   "contact": {
     "title": "Contáctanos",
@@ -72,7 +98,7 @@
     "heading": "Tecnología accesible estés donde estés",
     "description": "Oficinas físicas en Barcelona y soporte remoto internacional para empresas de cualquier sector."
   },
- "portfolio": {
+  "portfolio": {
     "title": "Portafolio",
     "heading": "Nuestros proyectos",
     "description": "Explora nuestras plantillas y desarrollos a medida para diferentes sectores.",
