@@ -60,6 +60,8 @@ const options = [
       >{t("navbar.contact")}
       </a>
 
+    
+
       <div class="pt-4">
         <LangSelector lang={lang} options={options} client:load />
       </div>
@@ -110,6 +112,12 @@ const options = [
         href={`/${lang}/contact`} 
         class={`text-xl font-semibold ${currentPath.includes('/contact') ? 'active' : 'text-white'}`}>
         {t("navbar.contact")}
+      </a>
+
+      <a 
+        href={`/${lang}/portfolio`} 
+        class={`text-xl font-semibold ${currentPath.includes('/portfolio') ? 'active' : 'text-white'}`}>
+        {t("navbar.portfolio")}
       </a>
 
     </div>
