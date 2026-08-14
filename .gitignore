@@ -6,6 +6,9 @@
 # testing
 /coverage
 
+# Astro
+.astro/
+
 # next.js
 /.next/
 /out/
